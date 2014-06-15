@@ -1,0 +1,322 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-padding-start: 0px;
+	}
+
+html {
+		background-color: #FFF;
+		margin: 0;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		/*color: #3954ED;*/
+        color: #4596b3;
+	}
+		   
+body {
+
+		min-width: 200px;
+		max-width: 95%;
+		margin: 0 auto;
+		padding: 2em;
+		line-height: 1.4em;
+		font-size: 1em;
+	}
+
+#header {
+		background-color: #4596b3;
+		color: #FFFFFF;
+		padding: 2em;
+		border-radius: 20px 0px 20px 0px;
+		-moz-border-radius: 20px 0px 20px 0px;
+		-webkit-border-radius: 20px 0px 20px 0px;
+		border: 1px solid #e03406;
+		margin-bottom: 1em;
+	}	
+	   
+#tagline {
+	margin: auto;
+	padding-bottom: 2em;
+    font-weight: bold;
+	}
+	
+#index-nav {
+	margin: auto;
+	padding-left: 5em;
+	}
+	
+h1 {
+	font-size: 250%;
+	font-variant: small-caps;
+	letter-spacing: .1em;
+    font-weight: bold;
+	text-shadow:
+       3px 3px 0 #000,
+	  -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	}
+		   
+h2 {
+	line-height: 1.2em;
+	font-size: 1.2em;
+	margin-top: 1em;
+    font-weight: bold;
+	}
+	
+/*
+===============
+Body Styling
+===============
+*/	
+
+ul {
+	list-style-type:none;
+
+}
+#filter-div {
+    float: left;
+	padding: 1em;
+}
+
+ul#filters li{
+	padding-left:1em;
+    background-color: #DDDDDD;
+    margin: .5em;
+    padding: .5em;
+    font-variant: small-caps;
+}
+
+ul#filters li a {
+
+}
+
+#container {
+	padding-top: 3em;
+}
+/*for isotope*/
+div.item {
+    border: 1px solid black;
+	float: left;
+	padding: 0em ;
+	margin: .45em;
+	background-color: #E8F8FF;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px #000;
+	box-shadow: 0 8px 6px -6px #000;
+
+}
+
+/*for coda-popup-bubbles*/
+.bubbleInfo {
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    display: none; /* keeps the popup hidden if no JS available */
+    background: #FFFFFF;
+    padding: 1em;
+    border-radius: 20px 0px 20px 0px;
+    -moz-border-radius: 20px 0px 20px 0px;
+    -webkit-border-radius: 20px 0px 20px 0px;
+    border: 1px solid #e03406;
+	color: black;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px #000;
+	box-shadow: 0 8px 6px -6px #000;
+}
+
+h3,h4,h5 {
+	line-height: 1.6em;
+	font-size: 1em;
+	margin-top: 2em;
+	}
+
+a {
+	color: #e03406;
+	text-decoration: none;
+	font-weight: bold;
+	}
+
+a img {
+	border: thin solid black;
+	}
+
+a:hover, a:active {
+	color: #4596b3;
+	}
+
+blockquote {
+	border: 5px solid #00746b;
+	border-top: 5px solid #00746b;
+	border-bottom: 5px solid #00746b;
+	background-color:  #b8cfcd;
+	padding: 10px 20px;
+	color: #555;
+	margin: 30px 80px;
+	font-size: 1em;
+	}
+
+blockquote q {
+	font-weight: bold;
+	color: #00746b;
+	}
+
+img {
+	padding: 0;
+	margin: auto;
+	text-align: center;
+	display: block;
+	}
+
+.thumb {
+	display: inline;
+	margin: 10px;
+	border: 2px solid #fff;
+	}
+
+object {
+	text-align: center;
+	display: block;
+	margin: 30px auto;
+	}
+
+blockquote {
+	border: 5px solid #00746b;
+	border-top: 5px solid #00746b;
+	border-bottom: 5px solid #00746b;
+	}
+
+
+div#main-content {
+	float:left;
+	width: 600px;
+	}
+div#sidebar {
+	float:right;
+	width: 245px;
+	text-align: center;
+	margin: auto;
+	}
+.clear {
+	clear: both;
+}
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Filter classes:
+copyedit
+design
+graphics
+html
+css
+js
+wordpress
+logo
+*/
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    -ms-transition-property:     -ms-transform, opacity;
+    -o-transition-property:      -o-transform, opacity;
+    transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+/*
+=============
+Footer
+=============
+*/
+div#footer {
+	text-align: center;
+	margin: auto;
+	}
+
+ul#social {
+	list-style-type:none;
+	}
+	
+ul#social li{
+	float: left;
+	list-style-type: none;
+	padding-left:20px;
+	text-align: center;
+	display: inline;
+	}
+		
+ul#social li a{
+	display: block;
+	width:25px;
+	height:25px;
+	text-indent: -9999px;
+	float: left;
+	overflow:hidden;
+	}
+
+ul#social li#twitter a{
+	background: url('images/nav_records.jpg') center bottom;
+	}
+
+ul#social li#facebook a {
+	background: url('images/nav_press.jpg') center bottom;
+	}
+
+ul#social li#github a {
+	background: url('images/nav_shoppe.jpg') center bottom;
+	}
+
+ul#social li#linkedin a {
+	background: url('images/nav_media.jpg') center bottom;
+	}
+
+ul#social li#pinterest a {
+	background: url('images/nav_calendar.jpg') center bottom;
+	}	
+	
+	
+#copyright {
+	font-size: .8em;
+	text-align: center;
+	}
