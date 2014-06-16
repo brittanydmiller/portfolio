@@ -1,0 +1,99 @@
+html, body, div, span, applet, object, iframe,
+ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  background: black url('white_brick_wall.png') repeat;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 95%;
+}
+
+h1{
+  background-color:FireBrick;
+  color: white;
+  text-align:center;
+  width: 100%;
+  padding: 2%;
+  box-shadow: 0px 5px 5px #888888;
+  margin-bottom: 1%;
+  font-size: 200%;
+  font-family:'Candal', Arial, Helvetica, sans-serif;
+}
+ul {
+  border:1px solid #ccc;
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+  width: 100%;
+  
+}
+li {
+  display:inline;
+  padding:10px 10px;
+  font-family:'Candal', Arial, Helvetica, sans-serif;
+  background-color: Purple;
+  box-shadow: 0px 5px 5px #888888;
+  width: 12%;
+  text-align: center;
+}
+
+ul a {
+  display:inline-block;
+  padding:15px 10px;
+
+}
+a {
+   text-decoration:none;
+   color:white;
+}
+
+#main-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 50%;
+  float: right;
+  margin: 3%;
+}
+
+@media (max-width: 800px) {
+  ul li {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-top:1px solid #ccc;
+    border-width:1px 0;
+  }
+
+img{
+  display: none;
+}

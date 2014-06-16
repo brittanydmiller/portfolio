@@ -1,0 +1,49 @@
+body {
+	font-family: 'Concert One', sans-serif;
+	color: #FAF3BC;
+	background: #6C9790 url('img/green_cup.png') repeat;
+	margin: 10px;
+}
+
+h1 {
+	font-size: 2.5em;
+	background-color: #faf3bc;
+	color: #5F8377;
+	text-align: center;
+	margin: 0 0 20px 0;
+	width: 100%;
+	padding: 20px 0;
+	font-variant: small-caps;
+}
+
+h2 {
+	font-size: 2em;
+	color: #5E6C87;
+}
+
+form {
+	margin: 0 auto;
+	width: 40%;
+}
+
+ul {
+	list-style: none;
+}
+
+.btn {
+	padding: 10px 40px;
+	margin: 40px 0;
+	color: #faf3bc;
+	background-color: #5E6C87;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-transform: uppercase;
+}
+
+#copyright {
+	padding: 10px 0;
+	margin: 15px 0;
+	text-align: center;
+	font-size: small;
+}

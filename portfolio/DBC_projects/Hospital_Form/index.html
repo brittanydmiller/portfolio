@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Concert+One&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<title>Hospital Intake Form</title>
+</head>
+<body>
+	<div class="container clearfix">
+		<h1>New Patient Intake Form</h1>
+        <!-- BEGIN FORM -->
+        <form name="custom_form" method="post" action="#">
+			<h2>Patient Information</h2>
+			<p>
+				Please provide the information below as completely as possible. All information is strictly confidential.
+			</p>
+			<p>
+				<label for="patient-name">Patient Name: </label><input name="patient-name" id="patient-name" type="text" value="" size="20" maxlength="100" />
+			</p> 
+			<p>
+				<label for="address">Street Address:</label> <input name="address" id="address" type="text" value="" size="20" maxlength="100" /> 
+			</p> 
+			<p>
+				<label for="city">City:</label> <input name="city" id="city" type="text" value="San Francisco" size="20" maxlength="100" />
+			</p> 
+            <p>
+				<label for="state">State:</label>
+				<select name="state" id="state">
+				  <option value="Alabama">Alabama</option>
+				  <option value="Alaska">Alaska</option>
+				  <option value="Arizona">Arizona</option>
+				  <option value="Arkansas">Arkansas</option>
+				  <option value="California" selected>California</option>
+				  <option value="Colorado">Colorado</option>
+				  <option value="Connecticut">Connecticut</option>
+				  <option value="Delaware">Delaware</option>
+				  <option value="Florida">Florida</option>
+				  <option value="Georgia">Georgia</option>
+				  <option value="Hawaii">Hawaii</option>
+				  <option value="Idaho">Idaho</option>
+				  <option value="Illinois">Illinois</option>
+				  <option value="Indiana">Indiana</option>
+				  <option value="Iowa">Iowa</option>
+				  <option value="Kansas">Kansas</option>
+				  <option value="Kentucky">Kentucky</option>
+				  <option value="Louisiana">Louisiana</option>
+				  <option value="Maine">Maine</option>
+				  <option value="Maryland">Maryland</option>
+				  <option value="Massachusetts">Massachusetts</option>
+				  <option value="Michigan">Michigan</option>
+				  <option value="Minnesota">Minnesota</option>
+				  <option value="Mississippi">Mississippi</option>
+				  <option value="Missouri">Missouri</option>
+				  <option value="Montana">Montana</option>
+				  <option value="Nebraska">Nebraska</option>
+				  <option value="Nevada">Nevada</option>
+				  <option value="New Hampshire">New Hampshire</option>
+				  <option value="New Jersey">New Jersey</option>
+				  <option value="New Mexico">New Mexico</option>
+				  <option value="New York">New York</option>
+				  <option value="North Carolina">North Carolina</option>
+				  <option value="North Dakota">North Dakota</option>
+				  <option value="Ohio">Ohio</option>
+				  <option value="Oklahoma">Oklahoma</option>
+				  <option value="Oregon">Oregon</option>
+				  <option value="Pennsylvania">Pennsylvania</option>
+				  <option value="Rhode Island">Rhode Island</option>
+				  <option value="South Carolina">South Carolina</option>
+				  <option value="South Dakota">South Dakota</option>
+				  <option value="Tennessee">Tennessee</option>
+				  <option value="Texas">Texas</option>
+				  <option value="Utah">Utah</option>
+				  <option value="Vermont">Vermont</option>
+				  <option value="Virginia">Virginia</option>
+				  <option value="Washington">Washington</option>
+				  <option value="West Virginia">West Virginia</option>
+				  <option value="Wisconsin">Wisconsin</option>
+				  <option value="Wyoming">Wyoming</option>
+				</select>
+			</p>
+            <p>
+				<label for="zip">Zip Code: </label><input name="zip" id="zip" type="text" value="5 digits" size="5" maxlength="5" /> 
+			</p>
+            <p id="gender">Gender:</p>
+			<ul>
+				<li><input type="radio" name="gender" id="male" value="male" /><label for="male"> Male </label></li>
+				<li><input type="radio" name="gender" id="female" value="female" /><label for="female"> Female </label></li>
+				<li><input type="radio" name="gender" id="other" value="Other" /><label for="other"> Other </label></li>
+			</ul>
+
+			<p id="symptoms">Symptoms:</p>
+			<p>
+				<input type="checkbox" value="SOB" id="SOB" name="symptoms" /> 
+				<label for="SOB">Shortness of Breath</label><br />
+				<input type="checkbox" value="temp" id="temp" name="symptoms" /> <label for="temp">High Temp</label><br />
+				<input type="checkbox" value="fatigue" id="fatigue" name="symptoms" /> <label for="fatigue">Fatigue</label><br />
+				<input type="checkbox" value="appetite_loss" id="appetite_loss" name="symptoms" />
+				<label for="appetite_loss">Loss of Appetite</label><br />
+				<input type="checkbox" value="hallucinations" id="hallucinations" name="symptoms" />
+				<label for="hallucinations">Hallucinations</label><br />
+				<input type="checkbox" value="swooning" id="swooning" name="symptoms" />
+				<label for="swooning">Swooning</label><br />
+				<input type="checkbox" value="ruby" id="ruby" name="symptoms" />
+				<label for="ruby">Speaking in Ruby</label><br />
+			</p>
+			<p>
+				<label for="diet">Describe your daily diet:</label>
+			</p> 
+			<p>
+				<textarea name="diet" id="diet" rows="12" cols="60"></textarea>  
+			</p>
+			<p>
+				<input type="submit" name="button_submit" value="Submit" class="btn" />
+			</p>
+          
+        </form><!-- END CUSTOM_FORM -->
+		<div id="copyright">
+		&copy; 2014 Dev Bootcamp Hospitals. All Rights Reserved.
+		</div>
+	</div>
+</body>
+</html>
