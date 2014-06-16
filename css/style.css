@@ -68,6 +68,22 @@ h2 {
   line-height: 2em;
 	}
 
+#links a {
+  color: white;
+  font-weight: normal;
+  }
+
+#links a:hover {
+  color: #333;
+  font-weight: normal;
+  }
+
+#links li {
+  display: inline;
+  float: right;
+  margin-right: 1em;
+  }
+
 /*
 ===============
 Body Styling
@@ -92,11 +108,15 @@ ul {
   display: none;
   }
 
-ul#filter li{
+ul#filter li {
 	padding-left:20px;
-  background-color: #DDDDDD;
+  background-color: #CBD6DD;
   margin: .25em 0;
   padding: .5em;
+  }
+
+ul #filter li:hover {
+  background-color: #3384b3
   }
 
 
@@ -108,8 +128,8 @@ div.item {
   border: 1px solid black;
 	float: left;
 	padding: 0em ;
-	/*margin: .3em;*/
-  margin: 1em;
+	margin: .3em;
+  /*margin: 1em;*/
 	background-color: #E8F8FF;
 	-webkit-box-shadow: 0 8px 6px -6px black;
 	-moz-box-shadow: 0 8px 6px -6px #000;
@@ -275,10 +295,10 @@ ul#social li#github a {
 
 ul#social li#linkedin a {
 	background: url('images/nav_media.jpg') center bottom;
-	}
-	
+	}	
 	
 #copyright {
 	font-size: .8em;
 	text-align: center;
+  padding-top: 3em;
 	}
