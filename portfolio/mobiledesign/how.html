@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Mobile Design Guide</title>
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="480" /> 
+		<meta name="Viewport" content="width=device-width" /> 
+		<link rel="stylesheet" href="large.css" />
+		<link href='http://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css' />
+	</head>
+<body>
+
+	<div id="page-wrap">
+		<div id="nav-div">
+			<ul id="nav">
+				<li id="home"><a href="index.html">Home</a></li>
+				<li id="explain"><a href="how.html">Explain How!</a></li>
+				<li id="demo"><a href="Week11/index.html" title="Resize your window to watch it in action!">Demo</a></li>
+			</ul>
+		</div><!--/nav-div-->
+	<div id="main-wrap">
+	<div id="main-content">
+
+	<h1>Explain How!</h1>
+	
+	<h2>The Fundamentals</h2>
+		
+		<p><em>Strive to keep your design flexible.</em> Flexible width, flexible images, flexible content. Give your user the choice to view your site in the desktop version or the mobile version no matter where they are or what device they use.</p>
+		<p><em>Make navigation and input easy and clear.</em> To respect the restrictions of mobile input options, you should make your clickable areas large and spaced out. Reduce the amount of text a user needs to fill out, and allow the page to "remember" what they input for next time. You should also provide an option to show password characters, because errors are so much more common on mobile devices. Make sure phone numbers are setup for instant dialing, using the &lt;tel&gt; tag.</p>
+		<p><em>Mobile users want different content</em> -- more streamlined, more quickly accessible, and with fewer pictures. Many mobile users are concerned about data usage -- and cell phones have significantly less processing power, storage capacity, and often slower connection speeds than desktop computers. 
+		</p>
+		
+	<h2>Some Rules of Thumb</h2>
+		<ul>
+			<li>Users tend to expect one vertical-scrolling column. If you ask them to scroll horizontally, or to constantly zoom in and out, you may confuse them (and lose them).</li>
+			<li>Make info easy to find and consume, and make searching VERY easy.</li> 
+			<li>Use a subtle, readable color scheme (that would be readable in various forms of lighting).</li>
+			<li>Keep your font usage to just a few fonts, and just a few sizes.</li>
+			<li>Don't use framesets or plug-ins like Flash</li>
+			<li>Keep scripting like Java to a minimum, or at least ensure graceful degradation, as many phones still do not support script</li>
+			<li>Don't use pop-ups or new windows</li>
+			<li>Fingertips are 40-80 pixels diameter, so keep this in mind when styling clickable areas</li>
+			<li>Remember, there is no "hover."</li>
+			<li>Forms should use native web form controls (not custom forms), use HTML5 form input types, and use top-aligned labels.</li>
+			<li>And don't forget to use whitespace! Good design is still important for mobile. Perhaps even moreso.</li>
+		
+		</ul>
+				
+	<h2>Dealing With Images</h2>	
+		<p>First and foremost - avoid complex background images. Just don't do it. And actually, keep foreground graphics to a minimum too -- and a minimum file size!</p>
+		<h3>Option #1. Do Nothing</h3>
+		<p><em>BAD IDEA.</em></p>
+		<h3>Option #2. Multi-Serve</h3>
+		<p>Upload multiple versions of the same graphic, one optimized for desktop and one optimized for the smaller resolution of a mobile device. This will help you maintain fast loading times and not put too much stress on the processor. Call them separately through CSS Media Queries.</p>
+		<p><em>DO NOT rely on the width and height attributes to do your scaling for you!</em></p>
+		<h3>Option #3. Cropping</h3>
+		<p> Use the CSS overflow property (overflow: hidden) to crop your images dynamically. Make the div container larger when viewed on desktop, and smaller (than the image) when viewed on a mobile device.(This doesn't solve the resolution problem, however.)
+		</p>
+		
+	
+		<h3>Option #4. A Collage.</h3>
+		<p>
+		A cool trick I learned from <a href="http://www.lynda.com/HTML-5-tutorials/Mobile-Web-Design-Development-Fundamentals/76334-2.html">Joe Marini at Lynda.com</a> is this: if you have numerous small images, like navigation icons, combine them into one gif and display each one inside a div (kind of like sprites). That way there's only one HTTP request and only one (albiet larger) image downloaded.
+		However, don't try to depend on imagemaps, because there is no functional 'hover' ability to show people what is clickable.
+		</p>
+		<h3>Option #5. A Puzzle.</h3>
+		<p>I learned from the <a href="http://www.w3.org/TR/mobile-bp/#d0e911">W3C Mobile Web Best Practices 1.0 Basic Guidelines </a> that you can break large images up into smaller sections, and deal with them separately. Hide several chunks of the picture when viewed on mobile using (display:none). But, read ahead...
+		</p>
+		<h3>Option #6. Display:none</h3>
+		<p>Just hide all your images. Maybe a lazy approach, but it can work. Be sure, however, that you apply (display:none) to a div or other container that holds the image -- not just to the image itself!
+		As you can see below, <a href="http://timkadlec.com/2012/04/media-query-asset-downloading-results/">Tim Kadlec's testing</a> shows that nearly all mobile browsers still send an HTTP request for the hidden image -- unless their container is hidden as well! (Unfortunately hiding the container only works for background images. Read on...)
+		<a href="http://timkadlec.com/2012/04/media-query-asset-downloading-results/"><img src="images/image-requests.png" alt="A chart that shows which mobile browsers will request hidden images" width="500" height="441" /></a>
+		</p>
+		<h3>Tim's Recommendations</h3>
+		<blockquote>
+			<p>	&ldquo;If you’re going to hide a content image, you’re not going to be able to do it by setting display:none. I recommend using a Javascript or server-side based approach instead.</p>
+			<p>If you want to hide a background image, your best bet is to hide the parent element. If you can’t do that, then use a cascade override... and set the background-image to none when you want it hidden.</p>
+			<p>For swapping background images, define them both inside of media queries.&rdquo;</p>
+		</blockquote>
+		<p>
+		<a href ="http://stylecampaign.com/blog/2011/08/alternate-mobile-images/">StyleCampaign.com</a> also offers commentary on the problem of pictures. There is not one perfect answer, as far as I could find. In my demo, I used background images inside divs that I could then hide for mobile. But for this tutorial, nearly all the images are foreground/content images, so it is not easy to know how to optimize them for mobile.
+		</p>
+	<h2>You're killin' me, Smalls!</h2>
+	<p>There are quite a few browsing engines out there, and you can't very easily design for all of them! It is good to design for a few of them so you need to pick out who you're really aiming for. 
+	</p>
+	<p>If your users are primarily younger, technogeek types, make sure you're designing for the Android and iOS platforms. If your users will be primarily older, more business-minded folks, be sure to design for Windows phones and Blackberries. 
+	</p>
+	<p><a href="http://www.lynda.com/HTML-5-tutorials/Mobile-Web-Design-Development-Fundamentals/76334-2.html"> Marini, from Lynda.com</a> recommends keeping to the concept of graceful degradation -- some older phones may only be able to view plain text! <a href="http://www.quirksmode.org/m/css.html#t021">  Quirksmode.org</a> has a lot of information about which mobile browsing engines support which tags/functions.</p>
+
+	<h2>ACTUAL CODE. Finally, right?</h2>
+	
+		<p>Okay, first off, the current suggested mobile markup language is XHTML-MP, but moving forward it will be all HTML5. According to Lynda.com, you should start by putting the following meta information in your HEAD section, to help the mobile browser determine how to best lay out the page:</p>
+	
+	<div class="code">
+			<p><code>&lt;meta name="HandheldFriendly" content="true" /&gt;</code> (failsafe for older browsers)</p>
+			<p><code>&lt;meta name="MobileOptimized" content="320" /&gt;</code>(or the screen width the page was designed for)</p>
+			<p><code>&lt;meta name="Viewport" content="width=device-width" /&gt;</code>(The most recent tag and current standard. It sets the page width to the device width, and turns off the browser's mobile optimizations.)</p>
+		
+	</div><!--code-->
+		<p>The next step then, if you're going with Option #2 - designing one site that's flexible (or "Responsive") -- is to add a little something called "CSS Media Queries." You can define them in one of two different ways. The first one: define them within a &lt;link&gt; tag in the HEAD section of your HTML, like this:</p>
+		
+		<p><code>&lt;link rel=stylesheet media=screen and (max-width:800px)href="example.css"/&gt;</code></p>
+		
+		<p>You would then link to separate stylesheets for the different scenarios. However, this means that your users' devices will download 2-3 stylesheets instead of just 1...which costs more data. 
+		The other option is to define the media queries inside a single CSS style sheet that has multiple sections.</p>
+		
+		<p>Here is an example from <a href="http://css-tricks.com/snippets/css/media-queries-for-standard-devices/">CSS-Tricks.com</a>:</p>
+<pre>			
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+</pre>	
+
+
+	<p>
+ <a href="http://css-tricks.com/">CSS-Tricks.com</a> provides pre-configured media queries for many well-known devices <a href="http://css-tricks.com/snippets/css/media-queries-for-standard-devices/">here</a>.
+ And you can <a href="http://mattkersley.com/responsive/">test your site on different widths at Matt Kersley's site, here.</a>
+		</p>
+	
+	<h2>Continue Your Journey</h2>
+	<p>There is much more to learn, such as <a href="http://detectmobilebrowsers.mobi/">server-side detection</a> to enable/disable features the mobile device can support, HTML 5 local storage, and new styles that can support the different types of "touch events" (tap, hold, pinch, etc.).</p>
+	<ul>
+		<li><a href="http://www.webdesignshock.com/responsive-design-problems/">WebDesignShock.com's Responsive Design Problems</a></li>
+		<li><a href="http://www.smashingmagazine.com/2011/07/22/responsive-web-design-techniques-tools-and-design-strategies/">Smashing Magazine's Responsive Web Design Techniques</a></li>
+		<li><a href="http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/">Smashing Magazine's Techniques for Gracefully Degrading Media Queries </a></li>
+		<li><a href="http://webdesignerwall.com/tutorials/responsive-design-in-3-steps">WebDesignerWall.com's Responsive Design in 3 Steps</a></li>
+		<li><a href="http://mr.dev.mobi/">Mr.Dev.Mobi</a></li>
+		<li><a href="http://mobiforge.com/starting/story/a-beginners-guide-mobile-web-development">Mobiforge.com - A Beginner's Guide</a></li>
+		<li><a href="http://www.w3.org/TR/mobile-bp/">W3.org</a></li>
+		<li><a href="http://www.passani.it/gap/">Passani's alternative Best Practices</a></li>
+	</ul>	
+
+</div><!--/main-content-->
+	</div><!--/main-wrap-->
+	<div id="footer">
+	&copy; Copyright 2012 Brittany Miller
+	</div><!--/footer-->
+	</div><!--/page-wrap-->
+	</body>
+</html>
+

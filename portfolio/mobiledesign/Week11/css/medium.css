@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* Assignment 11: Z Systems Re-Do for Mobile
+ * style.css
+ *
+ */
+
+body {
+	font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+    line-height: 1.4em;
+    background: url('../images/bg.jpg') repeat-x #000;
+	font-size: medium;
+}
+
+a{
+	text-decoration: none;
+	color: #0aaa50;
+	font-weight:bold;
+}
+
+a:hover {
+	background-color: #aaa;
+	color: #fff;
+}
+
+a:visited {
+	background: #555;
+}
+
+
+#logo {
+     display:none;	
+}
+
+#page-wrap {
+    margin: auto;
+    border: 5px solid #ccc;
+	border-radius: 15px;
+	background-color: #fff;
+}   
+
+#hiring {
+	display:none;
+}
+
+/* :::::::::::::::
+     header
+   ::::::::::::::: */
+
+#header {
+    height: 7em;
+    margin-bottom: 10px;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0 5% 0 20%;
+    color: #000;
+    font-weight: normal;
+    font-size: 280%;
+	text-transform: uppercase;
+
+	line-height: 200%;
+	background: url("../images/ZSysLogoHdr.gif") no-repeat .5em ;
+}
+
+/* :::::::::::::::
+     nav
+   ::::::::::::::: */
+
+#nav {
+    height: 20px;
+	width: 575px;
+    background-color: #0a0233;
+	padding: 10px 2px 10px 10px;
+	position:relative;
+	bottom: 20px;
+	right: 30px;
+	float: left;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#nav li {
+	float: left;
+	padding: 0 10px;
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    border-bottom: 1px solid yellow;
+    color: yellow;
+}
+
+#contact {
+	display:none;
+}
+
+/* :::::::::::::::
+     main-content
+   ::::::::::::::: */
+#main-wrap {
+	padding:10px;
+}
+   
+#main-content {
+    padding: 10px;
+	padding-top: 320px;
+	background: url('../images/Home-Collage.jpg') no-repeat;
+}
+
+#main-content h2 {
+    margin: 15px 0;
+	font-size: 100%;
+}
+
+/* :::::::::::::::
+     sidebar
+   ::::::::::::::: */
+
+#sidebar {
+    border: 1px solid #ccc;
+	border-radius: 15px;
+    padding: 2em 2em;
+	position: relative;
+}
+
+#sidebar h2 {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+}
+
+#sidebar ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+#sidebar li{
+		font-weight:bold;
+}
+/* :::::::::::::::
+     footer
+   ::::::::::::::: */
+
+#footer {
+    text-align: center;
+    color: #555;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer p {
+    margin: 0;
+    padding: 5px;
+}

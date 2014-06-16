@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/* Assignment 12: Mobile Web Design Tutorial
+ * style.css
+ *
+ */
+ 
+ 
+/* Smartphones (portrait and landscape) and Tablets (portrait) ----------- */
+@media
+only screen and (max-width : 799px) {
+	#page-wrap {
+		margin: 30px 5%;
+	}  
+
+	#nav-div {
+    background-color: #392f23;
+	}
+
+	ul #nav {
+		list-style-type: none;
+		overflow: auto;
+		padding: 0;
+		margin:0;
+		background-color: #0a0233;
+	}
+
+	#nav li {	
+		background: url("../images/arrow_small.png") no-repeat 80%;
+		border-bottom: 3px solid #ccc;
+		position: relative;
+		right: 50px;
+		width: 150%;
+	}
+
+	#nav a {
+		display: block;
+		padding: .5em 4em;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	#nav a:active {
+		border-bottom: 1px solid yellow;
+		color: yellow;
+	}
+	#main-wrap {
+		padding: 1% 5%;
+	}
+}	
+	
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 800px) {
+
+#page-wrap {
+    margin: 30px 100px;
+}  
+
+ul#nav {
+	list-style-type:none;
+	position: fixed;
+	left: -60px;
+	top: 50px;
+	}
+
+ul#nav li {
+	display: inline;
+	}
+		
+ul#nav li a{
+	display: block;
+	width:200px;
+	height:63px;
+	text-indent: -9999px;
+	margin-top: 15px;
+	}
+
+ul#nav li#demo a{
+	background: url('images/demo.png') no-repeat center top;
+	}
+
+ul#nav li#explain a {
+	background: url('images/explain.png') no-repeat center top;
+	}
+
+ul#nav li#home a {
+	background: url('images/home.png') no-repeat center top;
+	}
+
+ul#nav li#demo a:hover,
+ul#nav li#explain a:hover,
+ul#nav li#home a:hover {
+	background-position: center bottom;
+	}
+
+ul#nav li#demo a:visited,
+ul#nav li#explain a:visited,
+ul#nav li#home a:visited {
+	background-position: center;
+	}
+
+#main-wrap {
+	padding:20px 60px;
+}
+}
+
+/*-------END media queries --------*/
+  
+body {
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    line-height: 1.4em;
+    background: url('images/topbg.png'), url('images/bg.png')  #7b137b;
+	background-repeat: repeat-x, repeat;
+	color: #392f23;
+	font-size: medium;
+}
+
+#page-wrap {
+    border: 10px solid #ccc;
+	background: url('images/bg.png') #e4dec7;
+	overflow: hidden;
+}  
+
+a{
+	text-decoration: none;
+	color:#7b137b;
+	font-weight:bold;
+}
+
+a:hover {
+	background-color: #aaa;
+}
+
+
+
+/* :::::::::::::::
+     main-content
+   ::::::::::::::: */
+
+   
+#main-content {
+    padding: 10px;
+}
+
+#main-content h2 {
+    margin: 30px 0;
+	font-size: 150%;
+}
+
+#main-content h3 {
+    margin: 15px 0;
+	font-size: 110%;
+}
+
+h1, h2, h3 {
+font-family: 'Chango', serif;
+line-height: 1.3em;
+text-align: center;
+}
+
+div .skinny {
+	float:right;
+}
+
+em {
+	font-weight: bold;
+}
+.clear {
+	clear: both;
+}
+
+blockquote, code, pre{
+	background-color: #b479a1;
+	padding: 2px 8%;
+	width: 60%;
+	margin: auto;
+}
+
+img {
+	display: block;
+	margin: auto;
+	padding: 10px;
+}
+
+/* :::::::::::::::
+     footer
+   ::::::::::::::: */
+
+#footer {
+    clear: both;
+    text-align: center;
+	font-size: 75%;
+}

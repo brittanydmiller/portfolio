@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* Assignment 11: Z Systems Re-Do for Mobile
+ * style.css
+ *
+ */
+
+body {
+	font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+    line-height: 1.4em;
+    background: url('../images/bg.jpg') repeat-x #000;
+	font-size: medium;
+}
+
+a{
+	text-decoration: none;
+	color: #0aaa50;
+	font-weight:bold;
+}
+
+a:hover {
+	background-color: #aaa;
+	color: #fff;
+}
+
+a:visited {
+	background: #555;
+}
+
+
+#logo {
+     display:none;	
+}
+
+#page-wrap {
+    margin: auto;
+    border: 5px solid #ccc;
+	border-radius: 15px;
+	background-color: #fff;
+}   
+
+#hiring {
+	display:none;
+}
+
+/* :::::::::::::::
+     header
+   ::::::::::::::: */
+
+#header {
+    height: 7em;
+    margin-bottom: 10px;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0 5% 0 20%;
+    color: #000;
+    font-weight: normal;
+    font-size: 300%;
+	text-transform: uppercase;
+
+	line-height: 200%;
+	background: url("../images/ZSysLogoHdr.gif") no-repeat 0 .5em ;
+	display: block;
+	text-indent: -9999px;
+}
+
+/* :::::::::::::::
+     nav
+   ::::::::::::::: */
+
+#nav {
+    background-color: #ccc;
+	position:relative;
+	bottom: 20px;
+}
+
+#nav ul {
+    list-style-type: none;
+	overflow: auto;
+	padding: 0;
+	margin:0;
+	background-color: #0a0233;
+
+}
+
+#nav li {
+	
+	background: url("../images/arrow_small.png") no-repeat 80%;
+	border-bottom: 3px solid #ccc;
+	margin: 0 5px;
+}
+
+#nav a {
+    display: block;
+	padding: 1em 2em;
+	color: #fff;
+    text-decoration: none;
+}
+
+#nav a:active {
+    border-bottom: 1px solid yellow;
+    color: yellow;
+}
+
+#home {
+    display:none;
+}
+
+/* :::::::::::::::
+     main-content
+   ::::::::::::::: */
+#main-wrap {
+	padding:10px;
+}
+   
+#main-content {
+	display:none;
+}
+/* :::::::::::::::
+     sidebar
+   ::::::::::::::: */
+
+#sidebar {
+	padding: 5px;
+	margin-top: -30px;
+}
+
+#sidebar h2 {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+}
+
+#sidebar ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+#sidebar li{
+		font-weight:bold;
+}
+
+
+/* :::::::::::::::
+     footer
+   ::::::::::::::: */
+
+#footer {
+    text-align: center;
+    color: #555;
+	font-size: 70%;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+#mobile-view {
+	display: none;
+}
+
+#footer p {
+    margin: 0;
+    padding: 5px;
+}
