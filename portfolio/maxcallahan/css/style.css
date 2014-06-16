@@ -1,0 +1,225 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-padding-start: 0px;
+	}
+
+html {
+		margin: 0;
+        font-family: "Luckiest Guy", "Lilita One", Papyrus,  Copperplate, "Copperplate Gothic Light",fantasy;
+        color: #3573b3;
+		width: 1280px;
+		height: 720px;
+	}
+		   
+body {
+        background-color: #c54334;
+		margin: 0;
+		line-height: 1.4em;
+		font-size: 2.5em;
+	}
+
+body#playgame1 {
+    background-image:url("../images/background1.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #000;
+}
+
+body#playgame2 {
+    background-image:url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #000;
+}
+
+#header {
+		background-color: #4596b3;
+		color: #FFFFFF;
+		padding: 2em;
+		margin-bottom: 1em;
+        width: 100%;
+	}	
+	   	
+h1 {
+	font-size: 250%;
+	font-variant: small-caps;
+	letter-spacing: .05em;
+    font-weight: bold;
+    text-shadow: 4px 3px 0px #4596b3, 9px 8px 0px rgba(0,0,0,0.15);
+	}
+
+div#dialog {
+	background-color: white;
+    z-index: 20;
+}	
+
+.winner {
+	display:block;
+    position: absolute;
+    left: 5px;
+}
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+	
+/*
+===============
+Body Styling
+===============
+*/
+
+#play {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#button {
+    background-color: #FFF;
+    color: #E0CC24;
+    width: 50%;
+    height: 50%;
+    padding: 2em;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border: .5em solid #e0cc24;
+    margin: 1em auto;
+    text-align: center;
+}
+
+a {
+	color: #4596b3;
+	text-decoration: none;
+    padding: 2em;
+	}
+
+a:hover, a:active {
+	color: #c54334;
+	}
+
+img {
+	padding: 0;
+	text-align: center;
+	position: absolute;
+    top:0;
+    left:0;
+	}
+
+.mini {
+    z-index: 10;
+}
+
+.sil {
+    z-index:2;
+}
+
+
+/*PUZZLE #1*/
+#jksil {
+    left:936px;
+    top:112px;
+}
+
+#brsil {
+    left:446px;
+    top:257px;
+}
+
+#casil {
+    left:320px;
+    top:228px;
+}
+
+#risil{
+    left:720px;
+    top:155px;
+}
+
+#minibr{
+    left:150px;
+    top:380px;
+}
+#minica{
+    left:-10px;
+    top:20px;
+}
+#miniri{
+    left:20px;
+    top: 320px;
+}
+#minijk{
+    left:50px;
+    top:-30px;
+    z-index: 5;
+}
+
+
+/*PUZZLE #2*/
+#lusil {
+    left:914px;
+    top:302px;
+}
+
+#lesil {
+    left:445px;
+    top:250px;
+}
+
+#masil {
+    left:650px;
+    top:244px;
+}
+
+#jasil{
+    left:818px;
+    top:285px;
+}
+
+#minija{
+    left:150px;
+    top:380px;
+}
+#minile{
+    left:0px;
+    top:20px;
+}
+#minima{
+    left:10px;
+    top: 370px;
+}
+#minilu{
+    left:130px;
+    top:60px;
+    z-index: 5;
+}
+
+
+.solved{
+    display:none;
+}
+
+
+
+.clear {
+	clear: both;
+}
+
+/*
+=============
+Footer
+=============
+*/
+div#footer {
+	text-align: center;
+	margin: auto;
+    font-family: "Lilita One", Papyrus,  Copperplate, "Copperplate Gothic Light",fantasy;
+    color: #fff;
+	}
+	
+#copyright p {
+	font-size: .8em;
+	text-align: center;
+	}
