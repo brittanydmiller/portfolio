@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+/* Assignment Week 10: Web Design 1
+ * Brittany Miller
+ * style.css
+ *
+ */
+	
+body {
+	font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    line-height: 1.4em;
+    background: url('images/bg.jpg') #e5d8b7;
+	color: black;
+	font-size: 1em;
+}
+
+#pagewrap {
+    margin: 40px 120px;
+	width: 966px;
+	}  
+
+#header {
+	position:relative;
+	left: -100px;
+	height: 120px;
+	width: 1024px;
+	background-image: url('images/masthead.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+h1{
+	text-indent:-9999px;
+}
+
+#social-div {
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+#facebook {
+position: relative;
+top: -21px;
+
+}
+
+#twitter {
+position: relative;
+top: -20px;
+}
+
+ul {
+	list-style:none;
+}
+
+ul#main-nav {
+	position: absolute;
+	left: -5px;
+	top: 150px;
+	}
+	
+ul#main-nav li a{
+	display: block;
+	height:15px;
+	margin-top: 10px;
+	}
+	
+ul#main-nav li {
+	height: 1.4em;
+	}
+
+
+/* :::::::::::::::
+        main
+   ::::::::::::::: */
+#mainwrap {
+	padding:20px 50px;
+}
+
+div #title {
+	background-image: url('images/author.png');
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 50px;
+	padding: 1em;
+	position: relative;
+	z-index: 99;
+}
+
+p {
+	font-size: .9em;
+}
+
+a{
+	text-decoration: none;
+	color:#267830;
+	font-weight:bold;
+}
+
+a:hover {
+	background-color: #fff;
+}
+   
+#main-content {
+    padding: 10px;
+}
+
+#main-content h2 {
+    margin: 30px 0;
+	font-size: 150%;
+}
+
+#main-content h3 {
+    margin: .1em 1em;
+	font-size: 110%;
+}
+
+#author {
+	margin: 0 5em;
+}
+
+
+h4, h5, blockquote, .blurb {
+font-family: 'Port Lligat Slab', serif;
+line-height: 1.3em;
+text-align: left;
+color: #47261b;
+}
+
+.blurb {
+font-style: italic;
+font-size: 1.1em;
+}
+
+/*
+Commenting out header text so I can use graphic instead.
+h1 {
+font-size: 3.2em;
+position: relative;
+top: 28px;
+left: 120px;
+}
+*/
+
+h2 {
+font-size: small;
+font-weight: normal;
+left: 180px;
+position: relative;
+top: 30px;
+}
+
+h4 {
+font-size: 1.5em;
+text-align: center;
+margin-top: 3em;
+margin-bottom: -.2em;
+margin-left: 1em;
+}
+
+h5 {
+position: relative;
+right: 25px;
+}
+
+.blog-menu {
+position: relative;
+left: 45%;
+text-align: left;
+
+
+}
+
+#menu-div {
+margin-bottom: 99px;
+background-image: url('images/welcome.png');
+background-repeat: no-repeat;
+background-position: 20% 20%;
+
+}
+
+#menu-div li{
+line-height: 2.3em;
+}
+
+.clear {
+	clear: both;
+}
+
+blockquote{
+	position: relative;
+	left: -5em;
+	width: 100%;
+	line-height: 2em;
+	font-size: 1.3em;
+}
+
+#first-half{ 
+width: 390px;
+float: left;
+}
+
+#second-half {
+width: 390px;
+float: right;
+background-image: url('images/flowers.jpg');
+background-repeat: no-repeat;
+background-position: top left;
+overflow: visible; 
+padding-top: 250px;
+z-index: 50;
+position: relative;
+top: -50px;
+padding-right: 300px;
+margin-right:-300px;
+padding-left: 40px;
+}
+
+/* :::::::::::::::
+     footer
+   ::::::::::::::: */
+
+#footer {
+    clear: both;
+    text-align: center;
+	font-size: 75%;
+	padding-top: 100px;
+}
