@@ -1,0 +1,370 @@
+@charset "UTF-8";
+
+/* 
+ * Final Assignment
+ */
+
+*{
+	margin: 0;
+	padding: 0;
+} 
+ 
+body {
+	font-family: Georgia, "Book Antiqua", Times, "Times New Roman", serif;
+	color: #6b645b;
+    line-height: 1.9em;
+	font-size: small;
+	font-style: italic;
+	height: 11200px; 
+	background: url('images/background.gif'), url('images/background_pattern.gif');
+	background-repeat: no-repeat, repeat;
+	background-position: 50% 0, 0 0;
+	padding-bottom: 30px;
+	letter-spacing: .07em;
+}
+
+#page-wrap {
+	margin: auto;
+	width: 980px;
+}  
+
+.page {
+    position:absolute;
+    height:1000px;
+	width: 980px;
+    z-index:90;
+	float: left;
+}
+
+.visit {
+	height: 30px;
+	width: 120px;
+	background: url('images/bg_sprite.png') no-repeat 0 -75px;
+	overflow: hidden;
+	text-indent: -9999px;
+	margin-top: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+	color:#7b137b;
+	font-weight:bold;
+	display: block;
+}
+
+a:hover {
+	background-color: #fff;
+}
+
+/* :::::::::::::::
+     navigation
+   ::::::::::::::: */
+
+	ul#nav {
+		list-style-type:none;
+		background: url('images/bg_navigation.gif') no-repeat;
+		position: fixed;
+		top: 30px;
+		height: 400px;
+		width: 100px;
+		float: left;
+		z-index:99;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+
+	ul#nav li a{
+		display: block;
+		width:60px;
+		height:45px;
+		text-indent: -9999px;
+		margin-top: 18px;
+		margin-left: 7px;
+		padding-top: 9px;
+		padding-bottom: 8px;
+	}
+
+	ul#nav li#home-nav a{
+		background: url('images/bg_navigation_elements.gif') no-repeat;
+		background-position:left 0;
+	}
+
+	ul#nav li#clients-nav a {
+		background: url('images/bg_navigation_elements.gif') no-repeat;
+		background-position: -60px 0;
+	}
+
+	ul#nav li#services-nav a {
+		background: url('images/bg_navigation_elements.gif') no-repeat;
+		background-position: -120px 0;
+	}
+
+	ul#nav li#contact-nav a {
+		background: url('images/bg_navigation_elements.gif') no-repeat;
+		background-position: -180px 0;
+		}
+		
+	ul#nav li#home-nav a:hover{
+		background-position: left -70px;
+		}
+	ul#nav li#clients-nav a:hover{
+		background-position: -60px -70px;
+		}
+	ul#nav li#services-nav a:hover{
+		background-position: -120px -70px;
+		}
+	ul#nav li#contact-nav a:hover {
+		background-position: -180px -70px;
+		}
+
+	ul#nav li#home-nav a:active {
+		background-position: left -140px;
+		}
+	ul#nav li#clients-nav a:active{
+		background-position: -60px -140px;
+		}
+	ul#nav li#services-nav a:active{
+		background-position: -120px -140px;
+		}
+	ul#nav li#contact-nav a:active {
+		background-position: -180px -140px;
+		}
+	 
+
+/* :::::::::::::::
+     main-content
+   ::::::::::::::: */
+h1, h2, h3, h4 {
+	text-indent: -9999px;
+	height: 30px;
+	width: 120px;
+	background: url('images/bg_sprite.png') no-repeat;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+
+#home img {
+	position: relative;
+	bottom: 200px;
+}
+
+#home h2 {
+	position: relative;
+	left: 370px;
+	height: 200px;
+	width: 200px;
+	background: url('images/bg_logo.png') no-repeat;
+}
+
+#clients {
+    margin:1500px auto 0 auto;
+    padding:230px 0px 0 0px;
+}
+
+#clients h2 {
+	width: 155px;
+	height: 65px;
+	background-position: 20px 20px;
+	margin-top: 100px;
+}
+#services {
+	background: url('images/service_moster.gif'), url('images/mosters_content.gif'), url('images/mosters_accessibility.gif'), url('images/mosters_usability.gif'), url('images/mosters_visibility.gif');
+	background-repeat: no-repeat;
+	background-position: 535px 80px, 5px 500px, 170px 500px, 335px 500px, 500px 500px;
+    margin: 10000px auto 0 auto;
+    padding:80px 0 0 10px;
+	line-height: 1.9em;
+	letter-spacing: .02em;
+	
+}
+
+#services h2 {
+	width: 155px;
+	height: 65px;
+	background-position: -160px 20px;
+	margin-bottom: 25px;
+}
+
+#contact {
+	background: url('images/contact_moster.gif') no-repeat 10px 140px;
+    margin: 12500px auto 0 auto;
+    padding: 0 0 0 10px;
+}
+
+#contact h2 {
+	width: 155px;
+	height: 65px;
+	background-position: -320px 20px;
+}
+
+
+#guff h3 {
+	background-position: 0 -120px;
+}
+
+#pacific h3 {
+	background-position: 0 -150px;
+	width: 200px;
+}
+
+#demand h3 {
+	background-position: 0 -180px;
+	width: 300px;
+}
+
+#banana h3 {
+	background-position: 0 -210px;
+	width: 200px;
+}
+
+#sapphire h3 {
+	background-position: 0 -240px;
+	width: 200px;
+}
+
+#huskisson h3 {
+	background-position: 0 -270px;
+	width: 300px;
+}
+
+
+.first-image {
+	float: left;
+}
+.client-text{
+	float: left;
+	width: 18%;
+	padding-left: 10px;
+	width: 300px;
+	letter-spacing: .02em;
+}
+
+.second-image, .third-image {
+	float: right;
+}
+
+.second-image#pacific, .third-image#pacific, .second-image#sapphire, .third-image#sapphire {
+	float:left;
+}
+
+.first-image#banana, .client-text#banana, .second-image#huskisson, .third-image#huskisson{
+float:right;
+}
+
+
+div #form {
+	width: 400px;
+	float: right;
+	padding-right: 95px;
+}
+
+div#services {
+	float: left;
+}
+#services-text {
+	width: 45%;
+	text-align: left;
+	padding-bottom: 370px;
+	margin-bottom: 100px;
+}
+
+#services-text p{
+	padding-bottom: 15px;
+}
+#services-lists {
+	width: 960px;
+}
+#services-lists dl{
+	float:left;
+	margin-top: 55px;
+	padding: 120px 10px 0 5px;
+	width: 150px;
+	text-align: center;
+	line-height: 1.4em;
+	}
+	
+#services-lists dt{
+	/*float:clear;*/
+	display:none;
+	}
+	
+input.button {
+	background: url('images/bg_sprite.png') no-repeat -321px -75px;
+	width:100px;
+	height:30px;
+	text-indent: -9999px;
+	border: 0;
+	position: relative;
+	top: 30px;
+}
+
+input, textarea {
+	background: #dccfaa;
+	border-radius: 5px;
+	border: none;
+	width: 466px;
+}
+
+input {
+	height: 30px;
+}
+
+label {
+	font-weight: bold;
+	text-align: left;
+	padding: 30px;
+}
+
+h2 #services {
+	background-position: -70px 0;
+}
+h2 #contact {
+	background-position: -130px 0px;
+}
+
+#Captcha {
+position: relative;
+right: 15px;
+}
+
+h4 {
+height: 20px;
+}
+
+h4.about-header {
+	background-position: 0 -50px;
+}
+h4.input-header {
+	background-position: -300px -50px;
+}
+h4.client-header {
+	background-position: -600px -50px;
+}
+
+
+img {
+	padding: 10px;
+}
+
+div.client-blurb {
+	margin-bottom: 100px;
+	width: 980px;
+}
+
+/* :::::::::::::::
+     footer
+   ::::::::::::::: 
+*/
+div#footer {
+	clear:both;
+    text-align: right;
+	position: relative;
+	top: 13600px;
+	padding-bottom: 40px;
+}
