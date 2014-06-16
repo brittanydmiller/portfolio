@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>  Philosophy, Mathematics, CS  </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="index.html"> Home </a>
+                </li>
+                <li><a href="pi.html"> Raspberry Pi Hacks </a>
+                </li>
+                <li><a href="philosophy.html"> Philosophy, Mathematics, CS </a>
+                </li>
+                <li><a href="html.html"> HTML/CSS </a>
+                </li>
+                <li><a href="cl.html"> The Command Line </a>
+                </li>
+                <li><a href="js.html"> Javascript</a>
+                </li>
+                <li><a href="rb.html"> Ruby </a>
+                </li>
+                <li><a href="ror.html"> Ruby on Rails </a>
+                </li>
+                <li><a href="https://github.com/jlord/git-it"> Git-It ? </a>
+                </li>
+                <li><a href="alice.html"> Alice in Puzzleland </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1>
+                    <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+                    Philosophy, Mathematics, CS
+                </h1>
+
+            </div>
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+                <div class="row">
+                	<div class="col-md-12">
+                       <iframe width="560" height="315" src="http://www.youtube.com/embed/0XTDLq34M18" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-12">
+                       <iframe width="560" height="315" src="http://www.youtube.com/embed/xiZozgCLHc4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-12">
+                        <iframe width="560" height="315" src="http://www.youtube.com/embed/rUWfod_8JsM" frameborder="0" allowfullscreen></iframe>  
+                    </div>
+
+                 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+</body>
+
+</html>

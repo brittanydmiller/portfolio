@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>  The Command Line  </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="index.html"> Home </a>
+                </li>
+                <li><a href="pi.html"> Raspberry Pi Hacks </a>
+                </li>
+                <li><a href="philosophy.html"> Philosophy, Mathematics, CS </a>
+                </li>
+                <li><a href="html.html"> HTML/CSS </a>
+                </li>
+                <li><a href="cl.html"> The Command Line </a>
+                </li>
+                <li><a href="js.html"> Javascript</a>
+                </li>
+                <li><a href="rb.html"> Ruby </a>
+                </li>
+                <li><a href="ror.html"> Ruby on Rails </a>
+                </li>
+                <li><a href="https://github.com/jlord/git-it"> Git-It ? </a>
+                </li>
+                <li><a href="alice.html"> Alice in Puzzleland </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1>
+                    <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+                    The Command Line
+                </h1>
+
+            </div>
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+                <div class="row">
+                	<div class="col-md-3">
+                        <h3>Directory Operations</h3>
+                        <dl>
+                            <dt>pwd</dt>
+                            <dd>Show current directory</dd>
+                            <dt>mkdir dir</dt>
+                            <dd>Make directory dir</dd>
+                            <dt>cd dir</dt>
+                            <dd>Change directory to dir</dd>
+                            <dt>cd ..</dt>
+                            <dd>Go up a directory</dd>
+                            <dt>ls</dt>
+                            <dd>List files</dd>
+                        </dl>
+
+
+                        <h3>Bash Commands</h3>
+                        <dl>
+                            <dt>uname -a</dt>    
+                            <dd>Show system and kernel</dd>
+                            <dt>head -n1 /etc/issue</dt> 
+                            <dd>Show distri­bution</dd>
+                            <dt>mount</dt>
+                            <dd>Show mounted filesy­stems</dd>
+                            <dt>date</dt>    
+                            <dd>Show system date</dd>
+                            <dt>uptime</dt>  
+                            <dd>Show uptime</dd>
+                            <dt>whoami</dt>  
+                            <dd>Show your username</dd>
+                            <dt>man command</dt> 
+                            <dd>Show manual for command</dd>
+                        </dl>
+
+                        <h3>Bash Shortcuts</h3>
+                        <dl>
+                            <dt>CTRL-c</dt>
+                            <dd>Stop current command</dd>
+                            <dt>CTRL-z</dt>
+                            <dd>Sleep program</dd>
+                            <dt>CTRL-a</dt>
+                            <dd>Go to start of line</dd>
+                            <dt>CTRL-e</dt>
+                            <dd>Go to end of line</dd>
+                            <dt>CTRL-u</dt>
+                            <dd>Cut from start of line</dd>
+                            <dt>CTRL-k</dt>
+                            <dd>Cut to end of line</dd>
+                            <dt>CTRL-r</dt>
+                            <dd>Search history</dd>
+                            <dt>!!</dt>
+                            <dd>Repeat last command</dd>
+                            <dt>!abc</dt>
+                            <dd>Run last command starting with abc</dd>
+                            <dt>!abc:p</dt>
+                            <dd>Print last command starting with abc</dd>
+                            <dt>!$v
+                            <dd>Last argument of previous command</dd>
+                            <dt>ALT-.</dt>
+                            <dd>Last argument of previous command</dd>
+                            <dt>!*</dt>
+                            <dd>All arguments of previous command</dd>
+                            <dt>^abc-^-123</dt>
+                            <dd>Run previous command, replacing abc with 123</dd>
+                        </dl>
+
+                        
+                        <h3>Bash Variables</h3>
+                        <dl>
+                            <dt>env</dt>
+                            <dd>Show enviro-nment variables</dd>
+                            <dt>echo $NAME</dt>
+                            <dd>Output value of $NAME variable</dd>
+                            <dt>export NAME-=v-alue</dt>
+                            <dd>Set $NAME to value</dd>
+                            <dt>$PATH</dt>
+                            <dd>Executable search path</dd>
+                            <dt>$HOME</dt>
+                            <dd>Home directory</dd>
+                            <dt>$SHELL</dt>
+                            <dd>Current shell</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>File Operations</h3>
+                        <dl>
+                            <dt>touch file1</dt>
+                            <dd>Create file1</dd>
+                            <dt>cat file1 file2</dt>
+                            <dd>Concat-enate files and output</dd>
+                            <dt>less file1</dt>
+                            <dd>View and paginate file1</dd>
+                            <dt>file file1</dt>
+                            <dd>Get type of file1</dd>
+                            <dt>cp file1 file2</dt>
+                            <dd>Copy file1 to file2</dd>
+                            <dt>mv file1 file2</dt>
+                            <dd>Move file1 to file2</dd>
+                            <dt>rm file1</dt>
+                            <dd>Delete file1</dd>
+                            <dt>head file1</dt>
+                            <dd>Show first 10 lines of file1</dd>
+                            <dt>tail file1</dt>
+                            <dd>Show last 10 lines of file1</dd>
+                            <dt>tail -f file1</dt>
+                            <dd>Output last lines of file1 as it changes</dd>
+                        </dl>
+
+
+                        <h3>ls Options</h3>
+                        <dl>
+                            <dt>-a</dt>
+                            <dd>Show all (including hidden)</dd>
+                            <dt>-R</dt>
+                            <dd>Recursive list</dd>
+                            <dt>-r</dt>
+                            <dd>Reverse order</dd>
+                            <dt>-t</dt>
+                            <dd>Sort by last modified</dd>
+                            <dt>-S</dt>
+                            <dd>Sort by file size</dd>
+                            <dt>-l</dt>
+                            <dd>Long listing format</dd>
+                            <dt>-1</dt>
+                            <dd>One file per line</dd>
+                            <dt>-m</dt>
+                            <dd>Comma--sep-arated output</dd>
+                            <dt>-Q</dt>
+                            <dd>Quoted output</dd>
+                        </dl>
+               
+                        <h3>Search Files</h3>
+                        <dl>
+                            <dt>grep pattern files</dt>
+                            <dd>Search for pattern in files</dd>
+                            <dt>grep -i</dt>
+                            <dd>Case insens-itive search</dd>
+                            <dt>grep -r</dt>
+                            <dd>Recursive search</dd>
+                            <dt>grep -v</dt>
+                            <dd>Inverted search</dd>
+                            <dt>grep -o</dt>
+                            <dd>Show matched part of file only</dd>
+                            <dt>find /dir/ -name name*</dt>
+                            <dd>Find files starting with name in dir</dd>
+                            <dt>find /dir/ -user name</dt>
+                            <dd>Find files owned by name in dir</dd>
+                            <dt>find /dir/ -mmin num</dt>
+                            <dd>Find files modifed less than num minutes ago in dir</dd>
+                            <dt>whereis command</dt>
+                            <dd>Find binary / source / manual for command</dd>
+                            <dt>locate file</dt>
+                            <dd>Find file (quick search of system index)</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Nano Shortcuts</h3>
+                        <dl>
+                            <h4>Files</h4>
+                            <dt>Ctrl-R</dt>
+                            <dd>Read file</dd>
+                            <dt>Ctrl-O</dt>
+                            <dd>Save file</dd>
+                            <dt>Ctrl-X</dt>
+                            <dd>Close file</dd>
+                            <h4>Images</h4>
+                            <dt>ALT-A</dt>
+                            <dd>Start marking text</dd>
+                            <dt>CTRL-K</dt>
+                            <dd>Cut marked text or line</dd>
+                            <dt>CTRL-U</dt>
+                            <dd>Paste text</dd>
+                            <h4>Navigate File</h4>
+                            <dt>ALT-/</dt>
+                            <dd>End of file</dd>
+                            <dt>CTRL-A</dt>
+                            <dd>Beginning of line</dd>
+                            <dt>CTRL-E</dt>
+                            <dd>End of line</dd>
+                            <dt>CTRL-C</dt>
+                            <dd>Show line number</dd>
+                            <dt>CTRL-_</dt>
+                            <dd>Go to line number</dd>
+                            <h4>Search File</h4>
+                            <dt>CTRL-W</dt>
+                            <dd>Find</dd>
+                            <dt>ALT-W</dt>
+                            <dd>Find next</dd>
+                            <dt>CTRL-\</dt>
+                            <dd>Search and replace</dd>
+                        </dl>
+
+                        <h3>Screen Shortcuts</h3>
+                        <dl>
+                            <dt>screen</dt>
+                            <dd>Start a screen session.</dd>
+                            <dt>screen -r</dt>
+                            <dd>Resume a screen session.</dd>
+                            <dt>screen -list</dt>
+                            <dd>Show your current screen sessions.</dd>
+                            <dt>CTRL-A</dt>
+                            <dd>Activate commands for screen.</dd>
+                            <dt>CTRL-A c</dt>
+                            <dd>Create a new instance of terminal.</dd>
+                            <dt>CTRL-A n</dt>
+                            <dd>Go to the next instance of terminal.</dd>
+                            <dt>CTRL-A p</dt>
+                            <dd>Go to the previous instance of terminal.</dd>
+                            <dt>CTRL-A "</dt>
+                            <dd>Show current instances of terminals.</dd>
+                            <dt>CTRL-A A</dt>
+                            <dd>Rename the current instance.</dd>
+                        </dl>
+
+
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>  HTML/CSS </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="index.html"> Home </a>
+                </li>
+                <li><a href="pi.html"> Raspberry Pi Hacks </a>
+                </li>
+                <li><a href="philosophy.html"> Philosophy, Mathematics, CS </a>
+                </li>
+                <li><a href="html.html"> HTML/CSS </a>
+                </li>
+                <li><a href="cl.html"> The Command Line </a>
+                </li>
+                <li><a href="js.html"> Javascript</a>
+                </li>
+                <li><a href="rb.html"> Ruby </a>
+                </li>
+                <li><a href="ror.html"> Ruby on Rails </a>
+                </li>
+                <li><a href="https://github.com/jlord/git-it"> Git-It ? </a>
+                </li>
+                <li><a href="alice.html"> Alice in Puzzleland </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1>
+                    <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+                    HTML/CSS
+                </h1>
+    
+            </div>
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+                <div class="row">
+                	<div class="col-md-12">
+                        <ul> 
+                            <li><a href="http://www.htmlgoodies.com/">HTML Goodies</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/learn/html">Mozilla</a></li>
+                            <li><a href="http://www.html5rocks.com/en/tutorials/?page=1">HTML5 Rocks</a></li>
+                            <li><a href="http://www.smashingmagazine.com">Smashing Magazine</a></li>
+                            <li><a href="http://css-tricks.com/">CSS Tricks</a></li>
+                            <li><a href="http://www.htmldog.com/">HTML Dog</a></li>
+                            <li><a href="http://beta.html5test.com/"> Beta HTML 5 Test</a></li>
+                            <li><a href="http://html5boilerplate.com/"> HTML 5 Boilerplate</a></li>
+                            <li><a href="#">Bootstrap</a></li>
+                            <li><a href="http://validator.w3.org/">W3 HTML Validator</a></li>
+                            <li><a href="http://jigsaw.w3.org/css-validator/">W3 CSS Validator</a></li>
+                            <li><a href="http://www.w3schools.com/">W3 Schools Tutorials</a></li>
+
+                        </ul>
+                   
+                    </div>
+                    <div class="col-md-12">
+                      
+                    </div>
+                    <div class="col-md-12">
+                        
+                    </div>
+
+                 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>  Alice in Puzzleland </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+       <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="index.html"> Home </a>
+                </li>
+                <li><a href="pi.html"> Raspberry Pi Hacks </a>
+                </li>
+                <li><a href="philosophy.html"> Philosophy, Mathematics, CS </a>
+                </li>
+                <li><a href="html.html"> HTML/CSS </a>
+                </li>
+                <li><a href="cl.html"> The Command Line </a>
+                </li>
+                <li><a href="js.html"> Javascript</a>
+                </li>
+                <li><a href="rb.html"> Ruby </a>
+                </li>
+                <li><a href="ror.html"> Ruby on Rails </a>
+                </li>
+                <li><a href="https://github.com/jlord/git-it"> Git-It ? </a>
+                </li>
+                <li><a href="alice.html"> Alice in Puzzleland </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1>
+                    <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+                    Alice in Puzzleland 
+                </h1>
+            </div>
+            <img src="img/tea.jpg"></a>
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="lead">  Puzzling thoughts during tea time... </p>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="well"> Actually there is one paradox I could never figure out!" said Alice. "Perhaps you can help me?" "Indeed, I'll be glad to," said Humpty Dumpty proudly... "It's the one about the barber," replied Alice. "A certain barber living in a small town shaves all the inhabitants who don't shave themselves and never shaves any inhabitant who does shave himself. Does the barber shave himself or not?""Oh, that's an old one, and a very easy one!" laughed Humpty Dumpty.</p>
+                    </div>
+                    <div class="col-md-7">
+                        <p class="well">WHO STOLE THE PEPPER? Well, the King's suspects were the March Hare, the Mad Hatter, and the Dormouse. Soldiers were sent to their house, but no pepper was found. Still, they might be hiding it somewhere, so they were arrested on general principles. At the trial the March Hare claimed that the Hatter was innocent and the Hatter claimed that the Dormouse was innocent. The Dormouse mumbled some statement in his sleep, but it was not recorded. As it turned out, no innocent one made a false statement and (we recall) people who steal pepper never make true statements. Also, the pepper was stolen by only one creature. Which, if any of the three, is guilty? 
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="well">A MORE INTERESTING CASE "And now, we come to the more interesting cases," said the King. Alice was all ears. "Well," began the King, "in this trial we again have three defendants—A, B, C. The court knew that one was a knight, one a knave, and the other the spy, but it was not known who was which. First A accused B of being the spy; then B accused C of being the spy; and then C pointed to one of the other two defendants and said, 'He is really the spy!' The judge then convicted the spy. Which one did he convict?" "Now, just a minute," cried Alice. "You don't expect me to solve this without your telling me which one C pointed to, do you?" "When I read this case in the book," replied the King, "I also thought that not enough information was given to solve it. But when I thought a bit more deeply about it, I realized there was. Yes, enough information has been given to determine the solution." Which one was the spy?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+</body>
+
+</html>

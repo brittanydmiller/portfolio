@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>  Ruby on Rails  </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="index.html"> Home </a>
+                </li>
+                <li><a href="pi.html"> Raspberry Pi Hacks </a>
+                </li>
+                <li><a href="philosophy.html"> Philosophy, Mathematics, CS </a>
+                </li>
+                <li><a href="html.html"> HTML/CSS </a>
+                </li>
+                <li><a href="cl.html"> The Command Line </a>
+                </li>
+                <li><a href="js.html"> Javascript</a>
+                </li>
+                <li><a href="rb.html"> Ruby </a>
+                </li>
+                <li><a href="ror.html"> Ruby on Rails </a>
+                </li>
+                <li><a href="https://github.com/jlord/git-it"> Git-It ? </a>
+                </li>
+                <li><a href="alice.html"> Alice in Puzzleland </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1>
+                    <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+                    Ruby on Rails
+                </h1>
+
+            </div>
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+                <div class="row">
+                	<div class="col-md-12">
+                        <p> Rails Girls Guide: <br>
+                            <a href="http://guides.railsgirls.com/app/"> rails time! </a> <br>
+                            <br> 
+                        </p>   
+                    </div>
+                    <div class="col-md-12">
+                        <p>
+                            <img src="hash.jpg">
+                        </p>
+               
+                    </div>
+                    <div class="col-md-12">
+
+                        
+                    </div>
+
+                 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+</body>
+
+</html>
