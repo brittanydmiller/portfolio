@@ -1,0 +1,299 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-padding-start: 0px;
+	}
+
+html {
+		background: url('Images/background.jpg') top left;
+		background-color: #ccc;
+		margin: 0 70px;
+		font-family: 'Andika', sans-serif;
+		color: #4f5f69;
+	}
+		   
+body {
+		width: 845px;
+		margin: 0 auto;
+		padding: 40px;
+		line-height: 1.4em;
+		font-size: 1em;
+	}
+
+#header {
+		background: url('Images/spencername.jpg') no-repeat;
+		display: block;
+		position: relative;
+		left: -140px;
+		top: -90px;
+		height: 115px;
+		padding: 0;
+		margin-bottom: -75px;
+		text-indent: -9999px;
+		z-index: 99;
+	}	
+	   
+/*
+==============
+Index page Navigation Squares
+==============
+*/
+
+#index-nav {
+	background: url('Images/images/HappyPeopleHeader_05.jpg') no-repeat 50px 0;
+	height: 516px;
+	padding-top: 249px;
+	margin: auto;
+	padding-left: 50px;
+	}
+ul#nav {
+	list-style-type:none;
+	}
+
+ul#nav li {
+	display: inline;
+	}
+		
+ul#nav li a{
+	display: block;
+	width:255px;
+	height:252px;
+	text-indent: -9999px;
+	float: left;
+	}
+
+ul#nav li#records a{
+	background: url('Images/nav_records.jpg') center bottom;
+	}
+
+ul#nav li#press a {
+	background: url('Images/nav_press.jpg') center bottom;
+	}
+
+ul#nav li#shoppe a {
+	background: url('Images/nav_shoppe.jpg') center bottom;
+	}
+
+ul#nav li#media a {
+	background: url('Images/nav_media.jpg') center bottom;
+	}
+
+ul#nav li#calendar a {
+	background: url('Images/nav_calendar.jpg') center bottom;
+	}
+
+ul#nav li#band a {
+	background: url('Images/nav_band.jpg') center bottom;
+	}
+
+ul#nav li#records a:hover,
+ul#nav li#press a:hover,
+ul#nav li#shoppe a:hover,
+ul#nav li#media a:hover,
+ul#nav li#calendar a:hover,
+ul#nav li#band a:hover {
+	background-position: left top;
+	}
+
+
+/*
+=================
+Subpage Navigation
+=================
+*/
+
+#subpage-nav {
+	list-style-type:none;
+	margin:0;
+	text-align:center;
+	font-weight: bold;
+	padding-left: 70px;
+	}
+
+#subpage-nav li {
+	float:left;
+	}
+		
+#subpage-nav a{
+	display:block;
+	width:120px;
+	}
+
+#subpage-nav a:hover {
+	font-weight:bold;
+	}	
+
+/*
+===============
+Body Styling
+===============
+*/	
+
+#mega {
+	line-height: 1.3em;
+	margin: 15px 0;
+	}
+
+#tagline {
+	text-align: center;
+	font-weight: bold;
+	margin: auto;
+	width: 800px;
+	}
+
+#album-name {
+	font-style: italic;
+	}
+h1 {
+	padding: 20px;
+	margin: 25px 10px -5px 10px;
+	font-size: 200%;
+	text-align: center;
+	font-variant: small-caps;
+	letter-spacing: 15px;
+	font-family: Tahoma, Geneva, sans-serif;
+	}
+		   
+h2 {
+	line-height: 1.8em;
+	font-size: 1.4em;
+	margin-top: 15px;
+	}
+
+h3,h4,h5 {
+	line-height: 1.6em;
+	font-size: 1em;
+	margin-top: 2em;
+	}
+
+a {
+	color: #00746b;
+	text-decoration: none;
+	}
+
+a img {
+	border: 0;
+	}
+
+a:hover {
+	color: #be5c1d;
+	}
+
+a:active {
+	color: #8b3a4d;
+	}
+
+blockquote {
+	border: 5px solid #00746b;
+	border-top: 5px solid #00746b;
+	border-bottom: 5px solid #00746b;
+	background-color:  #b8cfcd;
+	padding: 10px 20px;
+	color: #555;
+	margin: 30px 80px;
+	font-size: 1em;
+	}
+			
+blockquote q {
+	font-weight: bold;
+	color: #00746b;
+	}
+
+img {
+	padding: 0;
+	margin: 30px auto;
+	text-align: center;
+	display: block;
+	}
+
+#buzz img.logo {
+	display:inline;
+	float: right;
+	position: relative;
+	top: -50px;
+	}
+
+#merch img {
+	margin: 5px;
+	}
+
+.thumb {
+	display: inline;
+	margin: 10px;
+	border: 2px solid #fff;
+	}
+
+object {
+	text-align: center;
+	display: block;
+	margin: 30px auto;
+	}
+
+ul#cast {
+	list-style-type:none;
+	text-indent: 20px;
+	}
+	
+#merch, blockquote {
+	border: 5px solid #00746b;
+	border-top: 5px solid #00746b;
+	border-bottom: 5px solid #00746b;
+	}
+
+#merch {
+	margin: 20px auto;
+	width: 700px;
+	border-collapse: collapse;
+	background-color: #b8cfcd;
+	caption-side: bottom;
+	text-align: left;
+	}
+
+#merch th {
+	padding: 6px;
+	line-height: 1.4em;
+	}
+	
+#merch td {
+	padding: 2px;
+	}
+
+#donate {
+	text-align: center;
+	}
+
+div#main-content {
+	float:left;
+	width: 600px;
+	}
+div#sidebar {
+	float:right;
+	width: 245px;
+	text-align: center;
+	margin: auto;
+	}
+.clear {
+	clear: both;
+	}
+/*
+=============
+Footer
+=============
+*/
+div#footer {
+	text-align: center;
+	margin: auto;
+	}
+
+
+ul#social li{
+	float: left;
+	list-style-type: none;
+	padding-left:20px;
+	text-align: center;
+	}
+
+#copyright {
+	font-size: .8em;
+	text-align: center;
+	}

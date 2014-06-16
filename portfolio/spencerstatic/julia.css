@@ -1,0 +1,84 @@
+body {
+    background-image: url("../images/bg_cardboard.png");
+}
+.ruleIndex {
+    background-image: url("../images/rule.png");
+    background-repeat: repeat-x;
+    height: 15px;
+    width: 730px;
+}
+.indexpadding {
+    float: left;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.shows {
+    background-image: url("../images/CARDblock_4c.gif");
+    background-repeat: no-repeat;
+    float: left;
+    height: 235px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: 235px;
+}
+.shows:hover {
+    background-image: url("../images/CARDblock_4b.gif");
+}
+.music {
+    background-image: url("../images/CARDblock_5c.gif");
+    background-repeat: no-repeat;
+    float: left;
+    height: 235px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: 235px;
+}
+.music:hover {
+    background-image: url("../images/CARDblock_5b.gif");
+}
+.photos {
+    background-image: url("../images/CARDblock_6c.gif");
+    background-repeat: no-repeat;
+    float: left;
+    height: 235px;
+    padding-bottom: 10px;
+    width: 235px;
+}
+.photos:hover {
+    background-image: url("../images/CARDblock_6b.gif");
+}
+.videos {
+    background-image: url("../images/CARDblock_10c.gif");
+    background-repeat: no-repeat;
+    float: left;
+    height: 235px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: 235px;
+}
+.videos:hover {
+    background-image: url("../images/CARDblock_10b.gif");
+}
+.store {
+    background-image: url("../images/CARDblock_7c.gif");
+    background-repeat: no-repeat;
+    float: left;
+    height: 235px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: 235px;
+}
+.store:hover {
+    background-image: url("../images/CARDblock_7b.gif");
+}
+.contact {
+    background-image: url("../images/CARDblock_8c.gif");
+    background-repeat: no-repeat;
+    float: left;
+    height: 235px;
+    padding-bottom: 10px;
+    width: 235px;
+}
+.contact:hover {
+    background-image: url("../images/CARDblock_8b.gif");
+}

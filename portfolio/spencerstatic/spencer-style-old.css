@@ -1,0 +1,158 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+		background: url('Images/sunset-background.jpg');
+		background-repeat: no-repeat;
+		background-color: #000000;
+		background-attachment: fixed;
+}
+		   
+body {
+		width: 720px;
+		background: #fffbdb;
+		border-left: 20px solid #CCC;
+		border-right: 20px solid #CCC;
+		margin: 0 auto;
+		padding: 40px;
+		font-family:  'Century Gothic', sans-serif;
+		line-height: 1.4em;
+		font-size: .9em;
+}
+		   
+#nav {
+	list-style-type:none;
+	margin:0;
+	text-align:center;
+}
+
+#nav li {
+	float:left;
+}
+		
+#nav a{
+	display:block;
+	width:120px;
+}
+
+#nav a:hover {
+	font-weight:bold;
+}	
+			
+em {
+	font-weight: bold;
+}
+		
+blockquote {
+	border: 5px solid #00746b;
+	border-top: 5px groove #00746b;
+	border-bottom: 5px groove #00746b;
+	background-color:  #b8cfcd;
+	padding: 10px 20px;
+	color: #555555;
+	margin: 30px 80px;
+	font-size: 1em;
+}
+			
+blockquote q {
+	font-weight: bold;
+	color: #00746b;
+}
+
+#mega {
+	line-height: 1.3em;
+	margin: 15px 0;
+}
+
+#tagline {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 10px 0;
+	margin: 10px 0;
+}
+
+h1 {
+	padding: 20px;
+	margin: 25px 10px -5px 10px;
+	font-size: 200%;
+	text-align: center;
+	font-variant: small-caps;
+	letter-spacing: 15px;
+	color: #333333;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+		   
+h2 {
+	line-height: 1.8em;
+	font-size: 1.4em;
+	margin-top: 15px;
+}
+
+h3,h4,h5 {
+	line-height: 1.6em;
+	font-size: .8em;
+	margin-top: 2em;
+}
+
+a {
+	color: #00746b;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cc5353;
+}
+
+img {
+	padding: 5px 5px;
+	display: block;
+	margin: 30px auto;
+	text-align: center;
+}
+
+#merch img {
+	margin: 5px;
+}
+
+.thumb {
+	display: inline;
+	margin: 10px;
+	border: 2px solid #cccccc;
+}
+
+object {
+	text-align: center;
+	display: block;
+	margin: 30px auto;
+}
+	
+#merch, blockquote {
+	border: 5px solid #00746b;
+	border-top: 5px groove #00746b;
+	border-bottom: 5px groove #00746b;
+}
+
+#merch {
+	margin: 20px auto;
+	width: 700px;
+	border-collapse: collapse;
+	background-color: #b8cfcd;
+	caption-side: bottom;
+	text-align: left;
+}
+
+#merch th {
+	padding: 6px;
+	line-height: 1.4em;
+}
+	
+#merch td {
+	padding: 2px;
+}
+
+#donate {
+	text-align: center;
+}
