@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0068)http://www.icontact-archive.com/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=4 -->
+<html style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./Sony NEX-FS700s_files/widget110.css" media="all"><script src="./Sony NEX-FS700s_files/cb=gapi.loaded_0" async=""></script><meta property="og:url" content="http://www.icontact-archive.com/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=4">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script type="text/javascript" async="" src="./Sony NEX-FS700s_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="./Sony NEX-FS700s_files/in.js"></script><script type="text/javascript" src="./Sony NEX-FS700s_files/jquery.min.js"></script><style type="text/css"></style>
+<script type="text/javascript" src="./Sony NEX-FS700s_files/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="./Sony NEX-FS700s_files/jquery-ui-1.8.11-c.custom.css" type="text/css" media="all">
+<script>
+	
+	var shortUrls = {"0":{"archiveUrl":"http:\/\/www.icontact-archive.com\/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=0","shortenedUrl":"http:\/\/icont.ac\/1ftlc"},"1":{"archiveUrl":"http:\/\/www.icontact-archive.com\/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=1","shortenedUrl":"http:\/\/icont.ac\/1fe2U"},"2":{"archiveUrl":"http:\/\/www.icontact-archive.com\/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=2","shortenedUrl":"http:\/\/icont.ac\/1fe2V"},"3":{"archiveUrl":"http:\/\/www.icontact-archive.com\/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=3","shortenedUrl":"http:\/\/icont.ac\/1ftld"},"4":{"archiveUrl":"http:\/\/www.icontact-archive.com\/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=4","shortenedUrl":"http:\/\/icont.ac\/1ewBA"},"6":{"archiveUrl":"http:\/\/www.icontact-archive.com\/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=6","shortenedUrl":"http:\/\/icont.ac\/1ftle"},"7":{"archiveUrl":"http:\/\/www.icontact-archive.com\/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=7","shortenedUrl":"http:\/\/icont.ac\/1ftlf"}};
+	
+	(function($) {
+		$.extend({
+			getUrlVars: function()
+			{
+				var vars = [];
+				if(window.location.search.length == 0) {
+					return vars;
+				}
+				var hashes = window.location.search.slice(window.location.search.indexOf('?') + 1).split('&');
+				for (var i = 0; i < hashes.length; i++) {
+					var hash = hashes[i].split('=');
+					vars.push(hash[0]);
+					vars[hash[0]] = hash[1];
+				}
+				return vars;
+			},
+
+			getUrlVar: function(name)
+			{
+				return $.getUrlVars()[name];
+			},
+
+			getShortUrl:  function()
+			{
+				var wParameter = $.getUrlVar('w');
+				if (wParameter !== undefined && shortUrls[wParameter] !== undefined) {
+					return shortUrls[wParameter]['shortenedUrl'];
+				}
+				return shortUrls[0]['shortenedUrl'];
+			},
+
+			urlEncodeParameters: function(o)
+			{
+				tail = [];
+				$.each(o, function(key, value)
+				{
+					tail.push(key + "=" + encodeURIComponent(value));
+				})
+				return tail.join("&");
+			},
+
+           processClick: function(key,statType,baseUrl)
+           {
+               	var data = {
+						"d"  : key,
+						"t"  : statType
+					}
+
+					var w = $.getUrlVar('w');
+					if (w !== null && w !== undefined){
+						data.w = w;
+					}
+
+					var params = $.urlEncodeParameters(data);
+
+					$.getJSON(baseUrl + "/rtrack.php?" + params, '&jsoncallback=?', function(data){});
+           }
+
+		});
+
+	})(jQuery);
+
+</script>
+
+<style>
+	#addThisBar {
+		width: 100%;
+		margin: 0 0 1em 0;
+		padding: 0;
+		background-color: #f2f2f2;
+		border-bottom: 1px solid #ccc;
+		position: fixed;
+		z-index: 100;
+	}
+
+	#addThisBar ul {
+		list-style: none;
+		width: 600px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	#addThisBar li {
+		float: left;
+		margin-top: 2px;
+	}
+
+	#addThisBar li a {
+		text-decoration: none;
+		font-weight: bold;
+		color: #069;
+	}
+
+	#addThisBar .shareBar {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		margin-top: 5px;
+		margin-left: 10px;
+		font-weight: bold;
+		color: #069;
+	}
+
+    .buttons {
+        width: 250px;
+        margin-left: 90px;
+    }
+
+	#messageMainContent {
+		position: absolute;
+		top: 25px;
+		left: 0px;
+		width: 100%;
+	}
+
+	#poweredBy {
+		float: right;
+		margin-top: 2px;
+		margin-right: 5px;
+	}
+
+	body {
+		margin: 0;
+	}
+</style>
+<meta property="og:image" content="https://staticapp.icpsc.com/icp/loadimage.php/mogile/947521/c4fd2dcc34f53565a45f487d272ed9b9/image/png">
+<meta property="og:title" content="Free Seminar: Sony F3 S-LOG + RGB 4:4:4 workflow">
+<meta property="og:type" content="company">
+<meta property="fb:app_id" content="217374801631195">
+
+		<title>Z Systems has Sony NEX-FS700s in stock now!</title>
+		<style type="text/css">
+img {display: block;}  
+      a {color: #4A72AF;}
+      a:hover {text-decoration: none;}		</style>
+	
+<div style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;" id="_atssh"><iframe id="_atssh760" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;" src="./Sony NEX-FS700s_files/sh114.htm"></iframe></div><script type="text/javascript" src="./Sony NEX-FS700s_files/core069.js"></script></head>
+	<body>
+<script type="text/javascript">
+(function() {
+    $(document).ready(function() {
+            var share = $("script[type='IN/Share']").each(function(){
+				$(this).attr('data-url', $.getShortUrl());
+			});
+            var po = document.createElement('script');
+            po.type = 'text/javascript';
+            po.async = true;
+            po.src = 'http://platform.linkedin.com/in.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+
+            var showDialogBox = (window.location.hash == '#linkedinshare' ? true : false);
+            if(showDialogBox) {
+                var linkedinshareDialog = $( "#linkedIn-dialog-modal" ).dialog({
+                        height: 150,
+                        width: 370,
+                        resizable: false,
+                        draggable: false,
+                        modal: true
+                });
+
+                //Work around for jQuery UI to allow limiting CSS to just the dialog and overlay
+                linkedinshareDialog.parent().wrap('<div class="__dialog_theme linkedIn"></div>')
+                         .parent().next().wrap('<div class="__dialog_theme"></div>');//the next element is the overlay
+			}
+    });
+
+    })();
+
+
+function handleLinkedInShareEvent(){
+                
+                    $.processClick("4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4","500","https://app.icontact.com/icp");
+                   
+                if((window.location.hash == '#linkedinshare' ? true : false)) {
+			$('#linkedInInstructions').hide();
+			$('#linkedInThankYou').show();
+			$("#linkedIn-dialog-modal").parent().delay(1000).fadeOut(function() {
+			$("#linkedIn-dialog-modal").dialog('close');
+			});
+		}
+        }
+</script>
+
+
+<div id="linkedIn-dialog-modal" class="linkedin dialogue" style="display:none;">
+	<span id="linkedInInstructions">
+		<h2>Share this message</h2>
+		<p>Click the button below to share this on LinkedIn.</p>
+	</span>
+	<span id="linkedInThankYou" style="display:none;">
+		<h2>Thank you</h2>
+		<p>Thank you for sharing our message on LinkedIn.</p>
+	</span>
+	<div id="dialoglinkedIn" class="ui-corner-all"><script type="IN/Share" data-url="http://icont.ac/1ewBA" data-onsuccess="handleLinkedInShareEvent"></script></div>
+</div>
+<script type="text/javascript">
+window.___gcfg = {
+    lang: 'en-US'
+};
+
+(function() {
+    $(document).ready(function() {
+        var googleplusone = $("g\\:plus").each(function() {
+            $(this).attr('href', $.getShortUrl());
+        });
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+        var showDialogBox = (window.location.hash == '#googleplusone' ? true : false);
+        if (showDialogBox) {
+            var googleDialog = $("#google-dialog-modal").dialog({
+                height: 150,
+                width: 375,
+                resizable: false,
+                draggable: false,
+                modal: true
+            });
+
+            //Work around for jQuery UI to allow limiting CSS to just the dialog and overlay
+            googleDialog.parent().wrap('<div class="__dialog_theme googlePlusOne"></div>')
+                    .parent().next().wrap('<div class="__dialog_theme"></div>');//the next element is the overlay
+        }
+
+    }); //end doc ready
+})(); //end function
+
+function handleGooglePlusOneEvent(l, s){
+        if (s != 'off') {
+					
+                    $.processClick("4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4","400","https://app.icontact.com/icp");
+                    
+        }
+        if ((window.location.hash == '#googleplusone' ? true : false)) {
+            $('#googleInstructions').hide();
+            $('#googleThankYou').show();
+            $("#google-dialog-modal").parent().delay(1000).fadeOut(function() {
+                $("#google-dialog-modal").dialog('close');
+            });
+        }
+}
+</script>
+
+
+<div id="google-dialog-modal" class="google dialogue" style="display:none;">
+	<span id="googleInstructions">
+		<h2>+1 this message</h2>
+		<p>Click the button below to +1 this on Google+.</p>
+	</span>
+	<span id="googleThankYou" style="display:none;">
+		<h2>Thank you</h2>
+		<p>Thank you for sharing our message on Google+.</p>
+	</span>
+
+    <div id="dialogGoogle" class="ui-corner-all"><div style="height: 24px; width: 50px; display: inline-block;" id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: absolute; top: -10000px; width: 50px; margin: 0px; border-style: none;" tabindex="0" vspace="0" width="100%" id="I0_1364937935472" name="I0_1364937935472" src="about:blank" allowtransparency="true" data-gapiattached="true"></iframe></div></div>
+</div>
+<script>
+	(function($) {
+
+		$(document).ready(function() {
+			$('a[class="twitter-share-button"]').each(function()
+			{
+				$(this).attr('data-url', $.getShortUrl());
+			});
+
+		$.getScript("http://platform.twitter.com/widgets.js", function(){
+			var data = {
+			
+				"d"  : "4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4",
+				"t"  : "300"
+			
+			}
+
+			var w = $.getUrlVar('w');
+			if (w !== null && w !== undefined) {
+				data.w = w;
+			}
+
+			var params = $.urlEncodeParameters(data);
+
+			function handleTweetEvent(event){
+						
+							$.getJSON("https://app.icontact.com/icp/rtrack.php?" + params, '&jsoncallback=?',
+						
+								function(data){}
+								);
+			}
+
+			if($.browser.msie) {
+				twttr.events.bind('click',
+					handleTweetEvent
+				);
+			}
+			else {
+				twttr.events.bind('tweet',
+					handleTweetEvent
+				);
+			}
+		})
+});
+})(jQuery);
+
+
+</script>
+<div id="fb-root"><script type="text/javascript" src="./Sony NEX-FS700s_files/all.js" async=""></script></div>
+
+<script>
+	(function()	{
+		$(document).ready(function() {
+			var fblike = $("fb\\:like").each(function(){
+				$(this).attr('href', $.getShortUrl());
+			});
+			var e = document.createElement('script');
+			var showDialogBox = (window.location.hash == '#fblike' ? true : false);
+			e.type = 'text/javascript';
+			e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+			e.async = true;
+			document.getElementById('fb-root').appendChild(e);
+
+			window.fbAsyncInit = function()	{
+				FB.init({appId:'217374801631195', status: true, cookie: true,xfbml: true, oauth: true});
+
+				FB.Event.subscribe('edge.create', function(href, widget) {
+					if(showDialogBox) {
+							$('#likeInstructions').hide();
+							$('#likeThankYou').show();
+							$("#dialog-modal").parent().delay(1000).fadeOut(function() {
+								$("#dialog-modal").dialog('close');
+							});
+					}
+					
+                    $.processClick("4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4","200","https://app.icontact.com/icp");
+                    
+				});
+
+			};
+
+			if(showDialogBox) {
+				var likeDialog = $( "#dialog-modal" ).dialog({
+					height: 150,
+					width: 370,
+					resizable: false,
+					draggable: false,
+					modal: true
+				});
+
+				//Work around for jQuery UI to allow limiting CSS to just the dialog and overlay
+				likeDialog.parent().wrap('<div class="__dialog_theme facebook"></div>')
+					 .parent().next().wrap('<div class="__dialog_theme"></div>');//the next element is the overlay
+			}
+		});
+	}());
+
+
+</script>
+
+<div id="dialog-modal" class="facebook dialogue" style="display:none;">
+	<span id="Instructions">
+		<h2>Like this message.</h2>
+		<p>Click the button below to like this on Facebook.</p>
+	</span>
+	<span id="likeThankYou" style="display:none;">
+		<h2>Thank you</h2>
+		<p>Thank you for sharing our message on Facebook.</p>
+	</span>
+	<div id="dialogLike" class="ui-corner-all"><span style="width:50px;height:20px;overflow:hidden;display:inline-block;"><fb:like href="http://icont.ac/1ewBA" show_faces="false" width="50" font="" layout="button_count" ref=""></fb:like></span></div>
+
+</div><!-- AddThis Button BEGIN -->
+<div id="addThisBar">
+	<div id="poweredBy">
+		&nbsp;&nbsp; <a href="http://www.icontact.com/" target="_blank"><img height="20" border="0" src="./Sony NEX-FS700s_files/poweredBy_iContact_105x20.png"></a>
+	</div>
+	<ul>
+		<div class="addthis_toolbox addthis_default_style">
+			<li class="buttons">
+				<a class="at300b">
+					<span class="facebooklikespan">
+						<span style="width:50px;height:20px;overflow:hidden;display:inline-block;"><fb:like href="http://icont.ac/1ewBA" show_faces="false" width="50" font="" layout="button_count" ref=""></fb:like></span>
+					</span>
+				</a>
+				<a class="at300b">
+					<span class="twittertweetspan">
+						</span></a><a href="http://twitter.com/intent/tweet" data-url="http://icont.ac/1ewBA" class="twitter-share-button" data-count="horizontal" data-via="ZSystemsinc" data-text="Free Seminar: Sony F3 S-LOG + RGB 4:4:4 workflow - Tuesday September 18th, once at 3pm and again at 7pm. With Pizza! ">Tweet</a>
+					
+				
+				<a class="at300b">
+                    <div style="height:20px">
+					<span class="googleplusonespan" "="">
+						<div style="height: 24px; width: 50px; display: inline-block;" id="___plusone_1"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: absolute; top: -10000px; width: 50px; margin: 0px; border-style: none;" tabindex="0" vspace="0" width="100%" id="I1_1364937935478" name="I1_1364937935478" src="about:blank" allowtransparency="true" data-gapiattached="true"></iframe></div>
+					</span></div>
+				</a>
+				<a class="at300b">
+   					<span class="lnkdinshare" "="">
+						<script type="IN/Share" data-url="http://icont.ac/1ewBA" data-onsuccess="handleLinkedInShareEvent"></script>
+					</span>
+				</a>
+			</li>
+
+			<li class="shareBar">
+				Share this Page:
+			</li>
+			<li class="shareBar">
+				<a class="addthis_button">
+					<img width="16" height="16" border="0" align="top" src="./Sony NEX-FS700s_files/sm-plus.gif" alt="Share">
+				</a>
+			</li>
+		<div class="atclear"></div></div>
+	</ul>
+</div>
+<script type="text/javascript">
+	var addthis_share = {
+			templates: {twitter: "Check out " + $.getShortUrl() + " via ZSystemsinc" }
+	};
+	var addthis_config = {
+		"data_track_clickback": true,
+		services_compact: 'email,print,linkedin,google,digg,stumbleupon,favorites,more',
+		ui_cobrand: "<a href='http://www.icontact.com'>iContact</a>"
+	};
+</script>
+<script type="text/javascript" src="./Sony NEX-FS700s_files/addthis_widget.js"></script>
+<!-- AddThis Button END --><div id="messageMainContent">
+		<table bgcolor="#000000" cellpadding="0" cellspacing="0" style="background-color:#000000" width="100%">
+			<tbody>
+				<tr>
+					<td align="center" style="text-align:left">
+						<table align="center" bgcolor="#000000" cellpadding="0" cellspacing="0" id="topMessageWrapper" style="background-color:#000000;color:#ffffff;font-family:&#39;Trebuchet MS&#39;;font-size:11px;width:600px;margin:0 auto;" width="600">
+							<tbody>
+								<tr>
+									<td>
+										<!-- BASIC TEMPLATE: TwoColumnLeftWithHeadAltAndFoot -->
+										<table border="0" cellpadding="0" cellspacing="0" style="border-color: rgb(157, 189, 130); background-color: rgb(157, 189, 130);" width="600">
+											<tbody>
+												<tr>
+													<td bgcolor="#000000" style="background-color:#000000;color:#ffffff;font-family:&#39;Trebuchet MS&#39;;font-size:11px;">
+														<p style="text-align: center;">
+															<!-- begin_viewemail --></p>
+														<p style="font-family: Verdana,Arial,Helvetica,sans-serif; text-align: center;">
+															<span style="color:#ffffff;">Having trouble viewing this email? View in a browser</span> <a href="http://www.icontact-archive.com/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc?w=4#"><span style="color:#0063ed;">here</span></a>.</p>
+														<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+															<tbody>
+																<tr>
+																	<td style="background-color: rgb(0, 0, 0); padding: 10px; color: rgb(255, 255, 255); font-family: &#39;Trebuchet MS&#39;; font-size: 11px; vertical-align: top; width: 110px; text-align: left;">
+																		<div style="">
+																			<table border="0" cellpadding="0" cellspacing="0" style="word-wrap:break-word;table-layout:fixed;" width="100%">
+																				<tbody>
+																					<tr>
+																						<td style="color: rgb(255, 255, 255); font-family: &#39;Trebuchet MS&#39;; font-size: 11px; width: 105px;">
+																							<a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=http%3A%2F%2Fwww.zsyst.com"><img align="left" alt="Z Systems Logo" height="100" src="./Sony NEX-FS700s_files/png" style="border: 0px solid rgb(0, 0, 0); margin: 10px 10px 10px 4px; float: left;" width="100"></a></td>
+																						<td style="color: rgb(255, 255, 255); font-family: &#39;Trebuchet MS&#39;; font-size: 11px;">
+																							<p style="margin: 0px; padding: 0px;">
+																								<a href="mailto:sales@zsyst.com"><span style="color:#6c8755;"><img align="right" alt="Email us!" height="16" src="./Sony NEX-FS700s_files/png(1)" style="width: 16px; height: 16px; border: 0px solid rgb(0, 0, 0); margin: 0px 4px 4px; float: right;" width="16"></span></a><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=https%3A%2F%2Fvimeo.com%2Fzsystems"><span style="color:#6c8755;"><img align="right" alt="Find us on Vimeo" height="16" src="./Sony NEX-FS700s_files/png(2)" style="width: 16px; height: 16px; border: 0px solid rgb(0, 0, 0); margin: 0px 4px 4px; float: right;" width="16"></span></a><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=http%3A%2F%2Fwww.youtube.com%2Fuser%2FZSystems"><span style="color:#6c8755;"><img align="right" alt="Find us on Youtube" height="16" src="./Sony NEX-FS700s_files/png(3)" style="width: 16px; height: 16px; border: 0px solid rgb(0, 0, 0); margin: 0px 4px 4px; float: right;" width="16"></span></a><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=https%3A%2F%2Ftwitter.com%2Fzsystemsinc"><span style="color:#6c8755;"><img align="right" alt="Find us on Twitter" height="16" src="./Sony NEX-FS700s_files/png(4)" style="width: 16px; height: 16px; border: 0px solid rgb(0, 0, 0); margin: 0px 4px 4px; float: right;" width="16"></span></a><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=http%3A%2F%2Fwww.facebook.com%2Fpages%2FZ-Systems-inc%2F100832134030%3Fref%3Dh"><span style="color:#6c8755;"><img align="right" alt="Find us on Facebook" height="16" src="./Sony NEX-FS700s_files/png(5)" style="width: 16px; height: 16px; border: 0px solid rgb(255, 255, 255); margin: 0px 4px 4px; float: right;" width="16"></span></a><span style="color:#6c8755;"><strong><span style="font-size: 14px;">Z Systems, inc. •&nbsp; Pro Video Systems &amp; Support </span></strong></span></p>
+																							<p style="margin: 0px; padding: 0px;">
+																								&nbsp;</p>
+																							<p style="margin: 0px; padding: 0px;">
+																								<span style="font-size:24px;"><span style="color: rgb(250, 201, 3);"><span style="font-family: tahoma,geneva,sans-serif;"><strong>Better Images with the Sony PMW-F3:</strong></span></span></span></p>
+																							<p style="margin: 0px; padding: 0px;">
+																								<span style="font-size:24px;"><span style="color: rgb(250, 201, 3);"><span style="font-family: tahoma,geneva,sans-serif;"><strong>How to shoot &amp; edit with </strong></span></span></span><span style="font-size:27px;"><span style="color: rgb(250, 201, 3);"><span style="font-family: tahoma,geneva,sans-serif;"><strong><span style="font-size:24px;">LOG &amp; RGB </span></strong></span></span></span><br>
+																								&nbsp;</p>
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td style="color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;">
+														<table border="0" cellpadding="0" cellspacing="0" height="100%" style="border-color: transparent; background-color: rgb(157, 189, 130);" width="100%">
+															<tbody>
+																<tr>
+																	<td style="background-color:FFFFFF; padding:10px;color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;" valign="top">
+																		<div style="background-color:FFFFFF;">
+																			<p style="text-align: center;">
+																				<span style="font-size:20px;"><em>Give your productions expanded dynamic range and color depth</em></span></p>
+																			<p style="text-align: center;">
+																				&nbsp;</p>
+																			<p data-icontact-image-nowrap="true" style="text-align: left;">
+																				<img align="" alt="logarithm on chalkboard" height="224" src="./Sony NEX-FS700s_files/jpeg" style="width: 590px; height: 224px; border: 0px solid rgb(0, 0, 0); margin: 0px; display: block;" width="590"></p>
+																			<p style="text-align: center;">
+																				<em><span style="font-size:20px;">...without going back to school.</span></em></p>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td style="color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;">
+														<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+															<tbody>
+																<tr>
+																	<td bgcolor="#ddeaf2" style="background-color:#ddeaf2;color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;" valign="top" width="33%">
+																		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+																			<tbody>
+																				<tr>
+																					<td bgcolor="#ddeaf2" style="background-color:#ddeaf2;padding:10px;color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;" valign="top">
+																						<div style="">
+																							<table border="0" cellpadding="0" cellspacing="0" style="word-wrap:break-word;table-layout:fixed;" width="100%">
+																								<tbody>
+																									<tr>
+																										<td style="color: rgb(0, 0, 0); font-family: &#39;Trebuchet MS&#39;; font-size: 11px;">
+																											<p style="margin: 0px; padding: 0px; text-align: center;">
+																												<strong><span style="font-family:tahoma,geneva,sans-serif;"><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=http%3A%2F%2Fwww.zsyst.com%2Frentals%2Fsony-nex-fs700-accessories%2F"><span style="font-size: 18px;">Seminar Details</span></a></span></strong></p>
+																											<p>
+																												<span style="font-size:14px;"><strong>When:</strong> </span></p>
+																											<p>
+																												<span style="font-size:14px;">Tuesday, Sept.18th</span></p>
+																											<ul>
+																												<li>
+																													<span style="font-size:14px;">3-5pm </span></li>
+																												<li>
+																													<span style="font-size:14px;">7-9pm </span>(same show)</li>
+																											</ul>
+																											<p>
+																												<span style="font-size:14px;">Beverages will be provided, and pizza will be served in between the two showtimes. </span><br>
+																												&nbsp;</p>
+																											<p>
+																												<span style="font-size:14px;"><strong>Where:</strong> </span></p>
+																											<p>
+																												<span style="font-size:14px;">Z Systems, inc.</span><br>
+																												<span style="font-size:14px;">3724 Oregon Ave. South</span><br>
+																												<span style="font-size:14px;">Saint Louis Park, MN<br>
+																												55426</span></p>
+																											<p>
+																												&nbsp;</p>
+																											<p style="text-align: center;">
+																												<a href="mailto:brittanym@zsyst.com?subject=RSVP&body=%3CPlease%20choose%20a%20session%3E%0AI"><img align="" alt="" height="41" src="./Sony NEX-FS700s_files/png(6)" style="width: 144px; height: 41px; border: 0px solid rgb(0, 0, 0); margin: 0px; display: inline;" width="144"></a></p>
+																										</td>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																	<td style="color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;" valign="top" width="67%">
+																		<table border="0" cellpadding="0" cellspacing="0" height="100%" style="background-color: rgb(255, 255, 255);" width="100%">
+																			<tbody>
+																				<tr>
+																					<td style="padding:10px;color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;" valign="top">
+																						<div style="">
+																							<table border="0" cellpadding="0" cellspacing="0" style="word-wrap:break-word;table-layout:fixed;" width="100%">
+																								<tbody>
+																									<tr>
+																										<td style="color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;">
+																											<p style="margin-bottom:0;margin-left:0;margin-right:0;margin-top:0;padding:0;">
+																												<em><span style="font-family:tahoma,geneva,sans-serif;"><span style="font-size: 22px;"><strong>See the entire S-Log / 4:4:4 process, from start to finish</strong></span></span></em></p>
+																										</td>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</div>
+																						<div style="">
+																							<table border="0" cellpadding="0" cellspacing="0" style="word-wrap:break-word;table-layout:fixed;" width="100%">
+																								<tbody>
+																									<tr>
+																										<td style="color: rgb(0, 0, 0); font-family: &#39;Trebuchet MS&#39;; font-size: 11px;">
+																											<div>
+																												<dl>
+																													<dd>
+																														<p>
+																															<span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size: 14px;">Join Jason Brox and Greg Chastain as they take you through the entire process, from setting up the camera, working with the recorders, and how to edit and finish your project utlilizing the power of Avid Media Composer.&nbsp; </span></span></p>
+																														<ul>
+																															<li>
+																																<span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size: 14px;">What are the benefits of shooting Log?&nbsp; 4:4:4?</span></span></li>
+																															<li>
+																																<span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size: 14px;">How does the F-3 do this?</span></span></li>
+																															<li>
+																																<span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size: 14px;">What kind of outboard recorder/codec should I use?</span></span></li>
+																															<li>
+																																<span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size: 14px;">How can I view and edit my files?</span></span></li>
+																														</ul>
+																														<p>
+																															<span style="font-family:trebuchet ms,helvetica,sans-serif;"><span style="font-size: 14px;"><strong><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=http%3A%2F%2Fwww.zsyst.com%2F2012%2F08%2Fbetter-images-with-the-sony-pmw-f3-how-to-shoot-and-edit-with-log-and-rgb%2F">More details</a></strong> are available at our website.</span></span><br>
+																															&nbsp;</p>
+																													</dd>
+																												</dl>
+																											</div>
+																										</td>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</div>
+																						<div style="">
+																							<table border="0" cellpadding="0" cellspacing="0" style="word-wrap:break-word;table-layout:fixed;" width="100%">
+																								<tbody>
+																									<tr>
+																										<td colspan="3" style="padding:10px;color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;" valign="top">
+																											<div style="">
+																												<p style="text-align: center;">
+																													<img align="" alt="" height="63" src="./Sony NEX-FS700s_files/png(7)" style="width: 271px; height: 63px; border: 0px solid rgb(0, 0, 0); margin: 0px; text-align: center; display: inline;" width="271"></p>
+																											</div>
+																										</td>
+																									</tr>
+																									<tr>
+																										<td style="padding: 10px; color: rgb(0, 0, 0); font-family: &#39;Trebuchet MS&#39;; font-size: 11px; text-align: center;" valign="top">
+																											<img align="" alt="" height="41" src="./Sony NEX-FS700s_files/png(8)" style="width: 98px; height: 41px; border: 0px solid rgb(0, 0, 0); margin: 0px; display: inline;" width="98"></td>
+																										<td style="padding: 10px; color: rgb(0, 0, 0); font-family: &#39;Trebuchet MS&#39;; font-size: 11px; text-align: center;" valign="top">
+																											<a href="mailto:brittanym@zsyst.com?subject=RSVP&body=%3CPlease%20choose%20a%20session%3E%0AI"><img align="" alt="" height="45" src="./Sony NEX-FS700s_files/png(9)" style="width: 127px; height: 45px; border: 0px solid rgb(0, 0, 0); margin: 0px; display: inline;" width="127"></a></td>
+																										<td style="padding: 10px; color: rgb(0, 0, 0); font-family: &#39;Trebuchet MS&#39;; font-size: 11px; text-align: center;" valign="top">
+																											<img align="" alt="" height="26" src="./Sony NEX-FS700s_files/png(10)" style="width: 99px; height: 26px; border: 0px solid rgb(0, 0, 0); margin: 0px; display: inline;" width="99"></td>
+																									</tr>
+																									<tr>
+																										<td colspan="3" style="padding: 10px; color: rgb(0, 0, 0); font-family: &#39;Trebuchet MS&#39;; font-size: 11px; text-align: center;" valign="top">
+																											<p>
+																												&nbsp;</p>
+																											<img align="" alt="" height="34" src="./Sony NEX-FS700s_files/png(11)" style="width: 216px; height: 34px; border: 0px solid rgb(0, 0, 0); margin: 0px; display: inline; text-align: center;" width="216"></td>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td bgcolor="#ddeaf2" style="background-color:#ddeaf2;color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;">
+														<table border="0" cellpadding="0" cellspacing="0" height="100%" style="background-color: rgb(0, 0, 0);" width="100%">
+															<tbody>
+																<tr>
+																	<td bgcolor="#000000" style="background-color:#000000;padding:10px;color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;" valign="top">
+																		<div style="border-color: #c2d9e7;">
+																			<table border="0" cellpadding="0" cellspacing="0" style="word-wrap:break-word;table-layout:fixed;" width="100%">
+																				<tbody>
+																					<tr>
+																						<td style="color:#000000;font-family:&#39;Trebuchet MS&#39;;font-size:11px;">
+																							<p style="margin: 0px; padding: 0px; text-align: center;">
+																								<a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=http%3A%2F%2Fwww.zsyst.com"><img align="left" alt="Z Systems logo" height="100" src="./Sony NEX-FS700s_files/png" style="width: 100px; height: 100px; border: 0px solid rgb(0, 0, 0); margin: 2px 16px 2px 8px; float: left;" width="100"></a><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size: 10px;"><span style="color: rgb(255, 255, 255);">© </span></span></span><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size: 10px;"><span style="color: rgb(255, 255, 255);">Z Systems, inc.</span><span style="color: rgb(255, 255, 255);"> 2012. All rights reserved. </span></span></span></p>
+																							<p style="margin: 0px; padding: 0px;">
+																								<span style="color:#ffffff;"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 10px;">You are receiving this email because you have done business with us in the past, or previously indicated an interest in our business, seminars or deals. You may <a href="http://www.icontact-archive.com/[manage_your_subscription_url]">unsubscribe</a> at any time.<br>
+																								Add </span></span></span><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size: 10px;"><a href="mailto:info@zsyst.com">info@zsyst.com</a></span></span><span style="color:#ffffff;"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: 10px;"> to your address book to ensure you hear about the latest Z Systems news, seminars, and promotions. </span></span></span></p>
+																							<p style="margin: 0px; padding: 0px;">
+																								&nbsp;</p>
+																							<p style="margin: 0px; padding: 0px;">
+																								<span style="color: rgb(255, 255, 255);"><span style="color:#bacfdd;"><strong><span style="font-size: 16px;">952-974-3140&nbsp;&nbsp;&nbsp; •&nbsp; &nbsp; <a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=http%3A%2F%2Fwww.zsyst.com">www.zsyst.com</a></span></strong></span></span><a href="mailto:sales@zsyst.com"><span style="color:#ffffff;"><img align="right" alt="Email us" height="16" src="./Sony NEX-FS700s_files/png(1)" style="width: 16px; height: 16px; border: 0px solid rgb(0, 0, 0); margin: 4px; float: right;" width="16"></span></a><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=https%3A%2F%2Fvimeo.com%2Fzsystems"><span style="color:#ffffff;"><img align="right" alt="Find us on Vimeo" height="16" src="./Sony NEX-FS700s_files/png(2)" style="width: 16px; height: 16px; border: 0px solid rgb(0, 0, 0); margin: 4px; float: right;" width="16"></span></a><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=http%3A%2F%2Fwww.youtube.com%2Fuser%2FZSystems"><span style="color:#ffffff;"><img align="right" alt="Find us on YouTube" height="16" src="./Sony NEX-FS700s_files/png(3)" style="width: 16px; height: 16px; border: 0px solid rgb(0, 0, 0); margin: 4px; float: right;" width="16"></span></a><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=https%3A%2F%2Ftwitter.com%2Fzsystemsinc"><span style="color:#ffffff;"><img align="right" alt="Find us on Twitter at twitter.com/zsystemsinc" height="16" src="./Sony NEX-FS700s_files/png(4)" style="width: 16px; height: 16px; border: 0px solid rgb(0, 0, 0); margin: 4px; float: right;" width="16"></span></a><a href="http://click.icptrack.com/icp/rclick.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4&destination=http%3A%2F%2Fwww.facebook.com%2Fpages%2FZ-Systems-inc%2F100832134030%3Fref%3Dhl"><span style="color:#ffffff;"><img align="right" alt="Find us on Facebook" height="16" src="./Sony NEX-FS700s_files/png(5)" style="width: 16px; height: 16px; border: 0px solid rgb(0, 0, 0); margin: 4px; float: right;" width="16"></span></a></p>
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			&nbsp;</p>
+	
+
+
+
+<!-- <img src="http://click.icptrack.com/icp/rtrack.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4" width="1" height="1"> -->
+</div>
+<script type="text/javascript">var query = document.location.href.substring(document.location.href.indexOf("4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4")).replace("?","&");var hashTag = query.indexOf("#");if(hashTag > -1) { query = query.substring(0, hashTag); }document.body.innerHTML = document.body.innerHTML.replace(/4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc&w=4/g,query);var img = new Image();img.src = "https://app.icontact.com/icp/rtrack.php?d="+query;img.width = 1;img.height = 1;document.body.appendChild(img);</script><img src="./Sony NEX-FS700s_files/rtrack.php" width="1" height="1"><noscript>&lt;img src="https://app.icontact.com/icp/rtrack.php?d=4KRAZEfTUoe3yDJPVoRw7wKMtX4RZmAc" width="1" height="1" /&gt;</noscript></body></html>
