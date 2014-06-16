@@ -1,0 +1,563 @@
+@charset "UTF-8";
+
+/* Assignment Week 10: Web Design 1
+ * Brittany Miller
+ * style.css
+ *
+ */
+	
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: url('images/bg4.jpg') #7e93d0;
+	color: black;
+	font-size: .8em;
+    margin: 0;
+	padding: 0;
+	}
+
+#pagewrap {
+	width: 965px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('images/home-nav/home-nav1_03.png');
+	background-repeat: no-repeat;
+	background-position: 80px -5px;
+	border-left: solid black thick;
+	}  
+
+#pagewrap.school, #pagewrap.genderid {
+	border-left:0;
+	border-right: solid black thick;	
+}
+
+#header {
+	position:relative;
+	left: -100px;
+	height: 60px;
+}
+
+h1{
+	text-indent:-9999px;
+}
+
+h1 a{
+	display: block;
+	height:70px;
+}
+
+h1, h2, h3, h4, h5 {
+
+font-family: 'Noticia Text', "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+
+#social-div {
+	position:absolute;
+	top:-10px;
+	right:0;
+}
+
+form {
+float: right;
+}
+
+ul {
+	list-style:none;
+}
+
+/* NAVIGATION */
+
+ul#main-nav li a{
+	display: block;
+	height:55px;
+	width:178px;
+	text-indent: -9999px;
+	}
+	
+ul#main-nav li {
+	float: left;
+	}
+	
+/*inactive nav*/
+
+#news-nav {
+	background-image: url('images/sub-nav/k_03.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+
+#genderid-nav {
+	background-image: url('images/sub-nav/sub-nav3_05.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+	
+#respect-nav {
+	background-image: url('images/sub-nav/sub-nav3_06.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+	
+#school-nav {
+	background-image: url('images/sub-nav/sub-nav3_07.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+	
+#resources-nav {
+	background-image: url('images/sub-nav/sub-nav3_08.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+	
+/*active nav*/
+	
+#news-nav.news {
+	background-image: url('images/sub-nav/sub-nav2_03.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+
+#genderid-nav.genderid {
+	background-image: url('images/sub-nav/sub-nav2_05.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+	
+#respect-nav.respect {
+	background-image: url('images/sub-nav/sub-nav2_06.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+	
+#school-nav.school {
+	background-image: url('images/sub-nav/sub-nav2_07.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}
+	
+#resources-nav.resources {
+	background-image: url('images/sub-nav/sub-nav2_08.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	}	
+	
+a#news-nav {
+	position: relative;
+	left: -3px;
+	}
+
+a#news-nav:hover, a#genderid-nav:hover, a#respect-nav:hover, a#school-nav:hover, a#resources-nav:hover, a#news-nav:active, a#resources-nav:hover {
+	background-position: top;
+}
+/* :::::::::::::::
+        main
+   ::::::::::::::: */
+   
+ #menu-div {
+	padding: 30px 30px 0 30px;
+	margin-left: 70px;
+}
+
+dl{
+	font-size: .8em;
+}
+
+dl img{
+	float: left;
+	margin-right: 10px;
+}
+
+dt {
+	padding-top: .9em;
+	font-size: 1.1em;
+	}
+
+dd {
+	padding-bottom: .9em;
+}
+
+dl.genderid {
+	font-size: 1em;
+}
+
+dl.genderid dd{
+line-height: 1.4em;
+}
+
+#main-content.genderid dt{
+	background-image: url('images/arrow_yellow.png');
+	background-repeat:no-repeat;
+	background-position: 0 10px ;
+	font-weight: bold;
+	padding-left: 25px;
+	margin-bottom: 3px;
+}
+
+div.genderid a{
+	color:#ffcf32;
+}
+
+
+div.respect a{
+	color:#ad2f37;
+}
+div.school a{
+	color:#0095cc;
+}
+div.resources a{
+	color:#326d24;
+}
+
+a {
+	text-decoration: none;
+	font-weight:bold;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: #fff solid thin;
+}
+   
+#main-content {
+    padding: 0px;
+	margin: 0px;
+}
+
+#main-content h4 {
+    margin: 30px 20px;
+}
+
+h3{
+font-size: 1.5em;
+}
+
+h4 {
+font-size: 1.4em;
+text-align: center;
+margin-top: 3em;
+margin-bottom: -.2em;
+margin-left: 1em;
+padding: .5em 0; 
+}
+
+#menu-div dt, dd{
+line-height: 1.3em;
+}
+
+.clear {
+	clear: both;
+}  
+   
+.foreground {
+z-index: 0;
+}
+
+.background {
+z-index: 1;
+}
+
+#demo {
+	width:956px;
+	height:656px;
+	background-image: url('images/gradbox.png');
+	background-repeat: no-repeat;
+	background-position: 0;
+}
+
+a#eye {
+	position: relative;
+	left: 145px;
+	top: 105px;
+	background-image: url('images/art_eye.png');
+	background-repeat: no-repeat;
+	background-position:-25px -20px;
+	display: block;
+	height: 50px;
+	width: 100px;
+	text-indent: -9999px;
+}
+
+a#eye:hover, a#eye:active {
+	background-image: url('images/art-eye-glow.png');
+}
+
+a#heart {
+	position: relative;
+	left: 167px;
+	top: 145px;
+	background-image: url('images/art_heart.png');
+	background-repeat: no-repeat;
+	background-position:-25px -20px;
+	display: block;
+	height: 95px;
+	width: 100px;
+	text-indent: -9999px;
+}
+
+a#heart:hover, a#heart:active {
+	background-image: url('images/art-heart-glow.png');
+}
+
+a#bio {
+	position: relative;
+	left: 165px;
+	top: 185px;
+	background-image: url('images/art_bio.png');
+	background-repeat: no-repeat;
+	background-position:-20px -20px;
+	display: block;
+	height: 95px;
+	width: 100px;
+	text-indent: -9999px;
+}
+
+a#bio:hover, a#bio:active {
+	background-image: url('images/art-bio-glow.png');
+}
+
+a#shoes {
+	position: relative;
+	left: 114px;
+	top: 358px;
+	background-image: url('images/art_shoes.png');
+	background-repeat: no-repeat;
+	background-position:-5px -20px;
+	display: block;
+	height: 70px;
+	width: 170px;
+	text-indent: -9999px;
+}
+
+a#shoes:hover, a#shoes:active {
+	background-image: url('images/art-shoes-glow.png');
+}
+
+
+div#genderid0, div#genderid1, div#genderid2, div#genderid3, div#genderid4 {
+	width: 476px; 
+	height: 462px; 
+	position:relative;
+	left:421px;
+	bottom:306px;
+	overflow:hidden;
+	padding: 100px 20px 10px 20px;
+}
+
+div#genderid0 p, div#genderid1 p, div#genderid2 p, div#genderid3 p, div#genderid4 p {
+width: 300px;
+padding-top: 80px;
+}
+
+div#genderid0 p{
+    padding-left: 70px;
+    text-align: center;
+}
+
+div#genderid1{
+	background-image: url('images/genderid-box_03.png');
+	}
+			
+div#genderid2{
+	background-image: url('images/attract-box_03.png');
+}
+
+div#genderid3{
+background-image: url('images/bio-box_03.png');
+}
+
+div#genderid4{
+	background-image: url('images/express-box_03.png');
+}
+
+div#genderid1, div#genderid2, div#genderid3, div#genderid4 {
+    background-repeat: no-repeat;
+    background-position: 0px 102px;
+    display: hidden;
+}
+
+#mainwrap.resources {
+	padding:50px 50px 50px 100px;
+	width: 500px; 
+	background-image: url('images/handshake_08.png');
+	background-repeat: no-repeat;
+	background-position: -10px 600px;}
+
+
+div .title{
+	background-image: url('images/hand_06.png');
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 200px;
+	padding: 1em;
+	position: fixed;
+	right: -250px;
+	top: 250px;
+	text-indent: -9999px;
+}
+
+div.full  h4, div.half h4{
+	text-align: left;
+	padding: 0 0 0 25px;
+	background-image: url('images/arrow_yellow.png');
+	background-repeat: no-repeat;
+	background-position: 0;
+}
+
+div.half h4{
+	background-position: 496px 0;
+	padding: 0 0 0 520px;
+}
+
+#mainwrap.respect {
+	background-image: url('images/bg-red_02.jpg');
+	background-repeat: no-repeat;
+	margin-top: 80px;
+}
+
+#sub-content.respect{
+float:left;
+padding: 0 20px;
+}
+
+div.full h3{
+padding-top:500px;
+padding-left: 30px;
+background-image: url('images/arrow_red.png');
+background-repeat: no-repeat;
+background-position: 5px 500px ;
+}
+
+#sub-content.respect h4{
+color: #fff;
+text-align: left;
+padding: 0;
+margin: 0;
+font-size: 1em;
+}
+
+#sub-content.respect  h3{
+	background-image: url('images/Respect_03.png');
+	background-repeat: no-repeat;
+	height: 65px;
+	text-indent: -9999px;
+	padding: 0;
+}
+#sub-content.respect p {
+	line-height: 1.1em;
+}
+
+img.respect {
+	float: right;
+}
+
+#main-content.respect {
+	background-image: url('images/hand-heart_03.png');
+	background-repeat: no-repeat;
+	background-position: -30px 820px;
+}
+
+.full {
+	width: 600px;
+	padding-left: 350px;
+	}
+
+.half {
+	width: 956px;
+}
+
+	
+#advocacy {
+	float: left;
+	margin: 75px 30px;
+	}
+	
+	
+#main-content.genderid {
+padding-left: 200px;
+padding-right: 200px;
+}
+
+#intro {
+padding-left: 200px;
+padding-right: 200px;
+padding-top: 100px;
+}
+
+#main-content.genderid h4 {
+text-align: left;
+}
+
+#sub-content.school {
+	background: #c7d2f1;
+	float: left;
+	width: 300px;
+	padding-right: 20px;
+	padding-bottom: 80px;
+	margin-top: 200px;
+}
+
+#main-content.school {
+	float: left;
+	width: 520px;
+	left: 2em;
+	padding: 180px 20px 20px 20px;
+	background-image: url('images/students_05_03.png');
+	background-repeat: no-repeat;
+	background-position: -50px 0;
+	margin-left: 70px;
+	}
+
+#main-content.school a {
+	font-size: .9em;
+}
+	
+div#picturebox {
+	width: 900px;
+	height: 280px;
+	background-image: url('images/school-bg_03.png');
+	background-repeat: no-repeat;
+	padding: 15px;
+	position: relative;
+	right: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}	
+	
+
+#pedestal {
+float: left;
+position: relative;
+left: 40px;
+margin-top: 60px;
+}
+
+#change {
+float: left;
+}
+
+
+
+
+/* :::::::::::::::
+     footer
+   ::::::::::::::: */
+
+#footer {
+    clear: both;
+    text-align: center;
+	font-size: 75%;
+	color: #fff;
+
+}
+
+#footer.resources {
+	padding-top: 180px;
+	background-image: url('images/hands_12.jpg');
+	background-repeat: no-repeat;
+	background-position: 200px 0;
+}
+
