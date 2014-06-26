@@ -44,6 +44,7 @@ h1 {
   font-variant: small-caps;
   letter-spacing: .1em;
   font-weight: bold;
+  line-height: 1em;
   text-shadow:
     3px 3px 0 #333,
     -1px -1px 0 #333,  
@@ -60,7 +61,7 @@ h2 {
   }
   
 #tagline h2{
-	margin: auto 5em;
+	margin: auto 20%;
 	padding-bottom: 2em;
   font-style: italic;
   font-weight: normal;
