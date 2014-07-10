@@ -9,7 +9,7 @@ html {
   padding: 0;
   margin: 0;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  color: #3384b3;
+  color: #000;
   }
 		   
 body {
@@ -23,13 +23,9 @@ body {
   }
 
 header {
-	background-color: #3384b3;
-	color: #FFFFFF;
+	background-color: transparent;
+	color: #000;
 	padding: 2em;
-	border-radius: 20px 0px 20px 0px;
-	-moz-border-radius: 20px 0px 20px 0px;
-	-webkit-border-radius: 20px 0px 20px 0px;
-	border: 2px solid #e03406;
 	margin-bottom: 1em;
   }	
 	   
@@ -45,12 +41,6 @@ h1 {
   letter-spacing: .1em;
   font-weight: bold;
   line-height: 1em;
-  text-shadow:
-    3px 3px 0 #333,
-    -1px -1px 0 #333,  
-    1px -1px 0 #333,
-    -1px 1px 0 #333,
-    1px 1px 0 #333;
   }
        
 h2 {
@@ -70,8 +60,9 @@ h2 {
 	}
 
 #links a {
-  color: white;
+  color: #000;
   font-weight: normal;
+  padding: 2em;
   }
 
 #links a:hover {
@@ -109,14 +100,16 @@ ul {
   display: none;
   }
 
-ul#filter li {
-	padding-left:20px;
+ul#filter button {
+	padding-left:.2em;
   background-color: #CBD6DD;
   margin: .25em 0;
   padding: .5em;
+  font-size: .7em;
   }
 
-ul #filter li:hover {
+
+ul #filter button:hover {
   background-color: #3384b3
   }
 
@@ -126,22 +119,22 @@ ul #filter li:hover {
   }
 
 div.item {
-  border: 1px solid black;
+/*  border: 1px solid black;*/
 	float: left;
 	padding: 0em ;
 	margin: .3em;
   /*margin: 1em;*/
 	background-color: #E8F8FF;
-	-webkit-box-shadow: 0 8px 6px -6px black;
+/*	-webkit-box-shadow: 0 8px 6px -6px black;
 	-moz-box-shadow: 0 8px 6px -6px #000;
-	box-shadow: 0 8px 6px -6px #000;
+	box-shadow: 0 8px 6px -6px #000;*/
   }
 
 /*For Queness Captions*/
 .item {
   width:200px;
   height:200px;
-  border:4px solid #222;
+  /*border:4px solid #222;*/
   margin:5px 5px 5px 0;
 
   /* required to hide the image after resized */
@@ -201,7 +194,7 @@ h3,h4,h5 {
 	font-size: 1em;
 	}
 
-a {
+a, button {
 	color: #e03406;
 	text-decoration: none;
 	font-weight: bold;
@@ -211,7 +204,7 @@ a img {
 	border: thin solid black;
 	}
 
-a:hover, a:active {
+a:hover, a:active, button:hover, button:active {
 	color: #3384b3;
 	}
 	
