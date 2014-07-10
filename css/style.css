@@ -176,6 +176,10 @@ div.item {
   font-weight: bold;
   text-transform: uppercase;
   }
+
+.caption a:hover {
+  color: #FFF;
+}
 .item .caption p {
   padding:5px;
   margin:0;
