@@ -5,10 +5,10 @@
 	}
 
 html {
-	background: #FFF url('halftone.png') repeat ;
+	background: #FFF url('halftone.png') repeat;
   padding: 0;
   margin: 0;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #000;
   }
 		   
@@ -24,8 +24,7 @@ body {
 
 header {
 	background-color: transparent;
-	color: #000;
-	padding: 2em;
+	padding: 2em 0;
 	margin-bottom: 1em;
   }	
 	   
@@ -37,8 +36,6 @@ header {
   
 h1 {
   font-size: 250%;
-  font-variant: small-caps;
-  letter-spacing: .1em;
   font-weight: bold;
   line-height: 1em;
   }
@@ -51,7 +48,7 @@ h2 {
   }
   
 #tagline h2{
-	margin: auto 20%;
+	margin: auto 7%;
 	padding-bottom: 2em;
   font-style: italic;
   font-weight: normal;
@@ -101,7 +98,10 @@ ul {
   }
 
 ul#filter button {
-	padding-left:.2em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left:.2em;
   background-color: #CBD6DD;
   margin: .25em 0;
   padding: .5em;
@@ -172,11 +172,16 @@ div.item {
   /* add spacing and make the whole row clickable*/
   padding:5px;
   display:block;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
   }
 .item .caption p {
   padding:5px;
   margin:0;
-  font-size:10px;
+  font-size:.7em;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
   }
 img {
   border:0;
@@ -195,7 +200,7 @@ h3,h4,h5 {
 	}
 
 a, button {
-	color: #e03406;
+  color: #3384b3;
 	text-decoration: none;
 	font-weight: bold;
 	}
@@ -205,7 +210,7 @@ a img {
 	}
 
 a:hover, a:active, button:hover, button:active {
-	color: #3384b3;
+	color: #e03406;
 	}
 	
 .email {
