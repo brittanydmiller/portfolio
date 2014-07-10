@@ -6,8 +6,6 @@
  * To change this template use File | Settings | File Templates.
  */
 
-console.log("main.js is running");
-
 var app = {
   simpleFunction: function() {
     //display Filter controls
@@ -37,7 +35,7 @@ var app = {
       $(this).find('div.caption').stop(false,true).fadeOut(200);
     });
     //filtering
-    $('ul#filter a').click(function() {
+    $('ul#filter button').click(function() {
       $(this).css('outline','none');
       $('ul#filter .current').removeClass('current');
       $(this).parent().addClass('current');
