@@ -104,8 +104,11 @@ ul#filter button {
   padding-left:.2em;
   background-color: #CBD6DD;
   margin: .25em 0;
-  padding: .5em;
-  font-size: .7em;
+  padding: .7em;
+  font-size: .8em;
+  width: 100%;
+  text-align: left;
+  border: none;
   }
 
 
