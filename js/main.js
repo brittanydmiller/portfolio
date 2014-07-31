@@ -12,9 +12,9 @@ var app = {
     $('#filter-div').css("display","inline");
 		//Queness Captions
     //move the image in pixel
-    var move = -15;
+    //var move = -15;
     //zoom percentage, 1.2 =120%
-    var zoom = 1.2;
+    //var zoom = 1.2;
     //On mouse over those thumbnail
     // $('.item').hover(function() {
 
@@ -58,7 +58,7 @@ var app = {
   jQuery("#z-festShirt a").slimbox();
   jQuery("#datasafe a").slimbox();
   jQuery("#typography a").slimbox();
-  jQuery("#bizcards a").slimbox();
+  //jQuery("#bizcards a").slimbox();
   jQuery("#zshare a").slimbox();
   jQuery("#spencerSelf a").slimbox();
   jQuery("#spencerGames a").slimbox();
