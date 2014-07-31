@@ -159,7 +159,7 @@ ul #filter button:hover {
   color: #e03406;
   font-size:16px;
   /* add spacing and make the whole row clickable*/
-  padding:5px;
+  padding:1em;
   display:block;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
@@ -167,7 +167,7 @@ ul #filter button:hover {
   }
 
 .caption a:hover {
-  color: #FFF;
+  color: #CBD6DD;
 }
 .item .caption p {
   padding:5px;
