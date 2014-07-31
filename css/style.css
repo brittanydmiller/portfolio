@@ -227,6 +227,12 @@ object {
 	clear: both;
   }
 
+header img {
+  height: 200px;
+  width: 200px;
+  border-radius: 300px;
+  }
+
 /* Filter classes:
 copyedit
 design
