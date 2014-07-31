@@ -252,8 +252,9 @@ Footer
 =============
 */
 footer {
-	text-align: center;
 	margin: 2em auto;
+  padding: 2em 0;
+  background-color: #CBD6DD;
 	}
 
 ul#social {
@@ -261,32 +262,14 @@ ul#social {
 	}
 	
 ul#social li{
-	float: left;
-	list-style-type: none;
-	padding-left:20px;
-
-	text-align: center;
-	display: inline;
+  width: 32px;
+  height: auto;
+	display: inline-block;
 	}
-		
-ul#social li a{
-	width: 70px;
-  height: 70px;
-  display: block;
-	overflow:hidden;
-  background-image: url('../images/socialicons.png');
-	}
-
-a#github {
-  background-position: -400px -680px;
-	}
-
-a#linkedin {
-	background-position: -305px -305px;
-	}	
 	
 #copyright {
 	font-size: .8em;
 	text-align: center;
   padding-top: 3em;
+  color: #FFF;
 	}
