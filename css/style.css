@@ -5,7 +5,6 @@
 	}
 
 html {
-	background: #FFF url('halftone.png') repeat;
   padding: 0;
   margin: 0;
   font-family: 'Oswald', sans-serif;
@@ -14,21 +13,23 @@ html {
 		   
 body {
 	min-width: 200px;
-	max-width: 95%;
-	padding-left: 2em;
-  padding-right: 2em;
   padding-top: 0;
 	line-height: 1.4em;
 	font-size: 1em;
   }
 
+.offset {
+  padding-left: 3em;
+  width: 80%;
+  margin: 0 auto;
+  padding-right: 3em;
+}
+
 header {
-	background-color: transparent;
+  background: #FFF url('halftone.png') repeat;
 	padding: 2em 0;
-	margin-bottom: 1em;
   }	
 	   
-  
 #index-nav {
   margin: auto;
   padding-left: 5em;
@@ -47,13 +48,14 @@ h2 {
   font-weight: bold;
   }
   
-#tagline h2{
+p#tagline{
 	margin: auto 7%;
 	padding-bottom: 2em;
   font-style: italic;
   font-weight: normal;
   font-family: Georgia, serif;
   line-height: 2em;
+  font-size: 1.2em;
 	}
 
 #links a {
@@ -93,52 +95,45 @@ ul {
 
 #filter-div {
   float: left;
-  width: 200px;
+  width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0 .3em;
-  overflow: hidden;
-  display: none;
+  padding: 1em 0;
+  margin: 0;
+  background-color: #CBD6DD;
   }
 
 ul#filter button {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  padding-left:.2em;
-  background-color: #CBD6DD;
-  margin: .25em 0;
-  padding: .7em;
+  background-color: transparent;
+  padding: .7em .2em;
   font-size: .8em;
-  width: 100%;
-  text-align: left;
+  width: 13%;
   border: none;
+  float: left;
   }
 
 
 ul #filter button:hover {
-  background-color: #3384b3
+  background-color: #3384b3;
   }
 
+#portfolio {
+  background-color: white;
+  }
 
 #container {
 	padding-top: 3em;
-  }
-
-div.item {
-	float: left;
-	padding: 0em ;
-	margin: .3em;
-  /*margin: 1em;*/
-	background-color: #000;
+  width: 100%;
   }
 
 /*For Queness Captions*/
 .item {
-  width:200px;
+  width:80%;
   height:200px;
-  /*border:4px solid #222;*/
-  margin:5px 5px 5px 0;
+  padding: 0em;
+  margin:5px auto 5px auto;
 
   /* required to hide the image after resized */
   overflow:hidden;
@@ -147,7 +142,6 @@ div.item {
   position:relative;
 
   /* display div in line */
-  float:left;
   }
 
 .item img {
@@ -155,20 +149,21 @@ div.item {
   -moz-opacity:0.9;    /* old mozilla browser like netscape  */
   -khtml-opacity: 0.9;    /* for really really old safari */
   /*opacity: 0.7;*/
+  margin-top: 5px;
   }
 
 .item .caption {
-  width:200px;
+  width:50%;
   height:200px;
-  background:#000;
-  color:#fff;
+  margin-left:200px;
+  color:#000;
   font-weight:bold;
 
   /* fix it at the bottom */
   position:absolute;
   left:0;
   /* hide it by default */
-  display:none;
+  /*display:none;*/
   /* opacity setting */
   filter:alpha(opacity=90);    /* ie  */
   -moz-opacity:0.9;    /* old mozilla browser like netscape  */
@@ -199,7 +194,6 @@ div.item {
   font-family: Arial, sans-serif;
   }
 img {
-  border:0;
   /* allow javascript moves the img position*/
   position:absolute;
   }
@@ -220,10 +214,6 @@ a, button {
 	font-weight: bold;
 	}
 
-a img {
-	border: thin solid black;
-	}
-
 a:hover, a:active, button:hover, button:active {
 	color: #e03406;
 	}
@@ -242,7 +232,6 @@ img {
 .thumb {
 	display: inline;
 	margin: 10px;
-	border: 2px solid #fff;
 	}
 
 object {
@@ -275,7 +264,7 @@ Footer
 */
 footer {
 	text-align: center;
-	margin: auto;
+	margin: 2em auto;
 	}
 
 ul#social {
@@ -286,29 +275,25 @@ ul#social li{
 	float: left;
 	list-style-type: none;
 	padding-left:20px;
+
 	text-align: center;
 	display: inline;
 	}
 		
 ul#social li a{
-	display: block;
-	width:25px;
-	height:25px;
-	text-indent: -9999px;
-	float: left;
+	width: 70px;
+  height: 70px;
+  display: block;
 	overflow:hidden;
+  background-image: url('../images/socialicons.png');
 	}
 
-ul#social li#twitter a{
-	background: url('images/nav_records.jpg') center bottom;
+a#github {
+  background-position: -400px -680px;
 	}
 
-ul#social li#github a {
-	background: url('images/nav_shoppe.jpg') center bottom;
-	}
-
-ul#social li#linkedin a {
-	background: url('images/nav_media.jpg') center bottom;
+a#linkedin {
+	background-position: -305px -305px;
 	}	
 	
 #copyright {
