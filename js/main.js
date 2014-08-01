@@ -12,28 +12,28 @@ var app = {
     $('#filter-div').css("display","inline");
 		//Queness Captions
     //move the image in pixel
-    var move = -15;
+    //var move = -15;
     //zoom percentage, 1.2 =120%
-    var zoom = 1.2;
+    //var zoom = 1.2;
     //On mouse over those thumbnail
-    $('.item').hover(function() {
+    // $('.item').hover(function() {
 
-      //Set the width and height according to the zoom percentage
-      width = $('.item').width() * zoom;
-      height = $('.item').height() * zoom;
+    //   //Set the width and height according to the zoom percentage
+    //   width = $('.item').width() * zoom;
+    //   height = $('.item').height() * zoom;
   
-      //Move and zoom the image
-      $(this).find('img').stop(false,true).animate({'width':width, 'height':height, 'top':move, 'left':move}, {duration:200});
+    //   //Move and zoom the image
+    //   $(this).find('img').stop(false,true).animate({'width':width, 'height':height, 'top':move, 'left':move}, {duration:200});
   
-      //Display the caption
-      $(this).find('div.caption').stop(false,true).fadeIn(200);
-      },
-    function() {
-      //Reset the image
-      $(this).find('img').stop(false,true).animate({'width':$('.item').width(), 'height':$('.item').height(), 'top':'0', 'left':'0'}, {duration:100});
-      //Hide the caption
-      $(this).find('div.caption').stop(false,true).fadeOut(200);
-    });
+    //   //Display the caption
+    //   $(this).find('div.caption').stop(false,true).fadeIn(200);
+    //   },
+    // function() {
+    //   //Reset the image
+    //   $(this).find('img').stop(false,true).animate({'width':$('.item').width(), 'height':$('.item').height(), 'top':'0', 'left':'0'}, {duration:100});
+    //   //Hide the caption
+    //   $(this).find('div.caption').stop(false,true).fadeOut(200);
+    // });
     //filtering
     $('ul#filter button').click(function() {
       $(this).css('outline','none');
@@ -58,7 +58,7 @@ var app = {
   jQuery("#z-festShirt a").slimbox();
   jQuery("#datasafe a").slimbox();
   jQuery("#typography a").slimbox();
-  jQuery("#bizcards a").slimbox();
+  //jQuery("#bizcards a").slimbox();
   jQuery("#zshare a").slimbox();
   jQuery("#spencerSelf a").slimbox();
   jQuery("#spencerGames a").slimbox();

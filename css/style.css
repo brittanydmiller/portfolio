@@ -5,7 +5,6 @@
 	}
 
 html {
-	background: #FFF url('halftone.png') repeat;
   padding: 0;
   margin: 0;
   font-family: 'Oswald', sans-serif;
@@ -14,24 +13,41 @@ html {
 		   
 body {
 	min-width: 200px;
-	max-width: 95%;
-	padding-left: 2em;
-  padding-right: 2em;
   padding-top: 0;
 	line-height: 1.4em;
 	font-size: 1em;
   }
 
+.offset {
+  padding-left: 3em;
+  width: 80%;
+  margin: 0 auto;
+  padding-right: 3em;
+}
+
 header {
-	background-color: transparent;
-	padding: 2em 0;
-	margin-bottom: 1em;
-  }	
-	   
-  
-#index-nav {
-  margin: auto;
-  padding-left: 5em;
+  background: #FFF url('halftone.png') repeat;
+  padding: 2em 0;
+  } 
+     
+#links ul {
+  margin-right: 10em;
+}
+
+#links a {
+  color: #000;
+  font-weight: normal;
+  }
+
+#links a:hover {
+  color: #333;
+  font-weight: normal;
+  }
+
+#links li {
+  display: inline;
+  float: right;
+  margin-right: 4em;
   }
   
 h1 {
@@ -47,36 +63,24 @@ h2 {
   font-weight: bold;
   }
   
-#tagline h2{
-	margin: auto 7%;
-	padding-bottom: 2em;
+p#tagline{
+  margin: auto 7%;
+  padding-bottom: 2em;
   font-style: italic;
   font-weight: normal;
   font-family: Georgia, serif;
   line-height: 2em;
-	}
-
-#links a {
-  color: #000;
-  font-weight: normal;
-  padding: 2em;
+  font-size: 1.2em;
   }
+  
 
-#links a:hover {
-  color: #333;
-  font-weight: normal;
+
+header img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  display: none;
   }
-
-#links li {
-  display: inline;
-  float: right;
-  margin-right: 4em;
-  }
-
-#links ul {
-  margin-right: 10em;
-}
-
 /*
 ===============
 Body Styling
@@ -88,100 +92,81 @@ Body Styling
   }
 
 ul {
-	list-style-type:none;
+  list-style-type:none;
   }
 
 #filter-div {
   float: left;
-  width: 200px;
+  width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0 .3em;
-  overflow: hidden;
-  display: none;
+  padding: 1em 0;
+  margin-bottom: 1em;
+  background-color: #CBD6DD;
   }
 
 ul#filter button {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  padding-left:.2em;
-  background-color: #CBD6DD;
-  margin: .25em 0;
-  padding: .7em;
+  background-color: transparent;
+  padding: .7em .2em;
   font-size: .8em;
-  width: 100%;
-  text-align: left;
+  width: 13%;
   border: none;
+  float: left;
   }
 
 
-ul #filter button:hover {
-  background-color: #3384b3
-  }
+/*ul #filter button:hover {
+  background-color: #3384b3;
+  }*/
 
+#portfolio {
+  background-color: white;
+  }
 
 #container {
-	padding-top: 3em;
+  padding-top: 3em;
+  width: 100%;
   }
 
-div.item {
-	float: left;
-	padding: 0em ;
-	margin: .3em;
-  /*margin: 1em;*/
-	background-color: #000;
-  }
-
-/*For Queness Captions*/
 .item {
-  width:200px;
-  height:200px;
-  /*border:4px solid #222;*/
-  margin:5px 5px 5px 0;
-
-  /* required to hide the image after resized */
-  overflow:hidden;
-
-  /* for child absolute position */
+  width:70%;
+  min-height:220px;
+  margin:4em auto;
+  vertical-align: middle;
   position:relative;
-
-  /* display div in line */
-  float:left;
   }
 
-.item img {
-  filter:alpha(opacity=90);    /* ie  */
-  -moz-opacity:0.9;    /* old mozilla browser like netscape  */
-  -khtml-opacity: 0.9;    /* for really really old safari */
+.item:nth-child(2n) {
+  background-color: #DDD;
+  }
+
+.portfolio-thumb {
+  /*filter:alpha(opacity=90); */   /* ie  */
   /*opacity: 0.7;*/
+  margin-top: 5px;
   }
 
-.item .caption {
-  width:200px;
-  height:200px;
-  background:#000;
-  color:#fff;
+.caption {
+  width:50%;
+  min-height:200px;
+  margin-left:200px;
+  padding-left: 2em;
+  color:#000;
   font-weight:bold;
-
-  /* fix it at the bottom */
   position:absolute;
   left:0;
-  /* hide it by default */
-  display:none;
-  /* opacity setting */
-  filter:alpha(opacity=90);    /* ie  */
-  -moz-opacity:0.9;    /* old mozilla browser like netscape  */
-  -khtml-opacity: 0.9;    /* for really really old safari */
-  opacity: 0.9;    /* css standard, currently it works in most modern browsers like firefox,  */
+  /*filter:alpha(opacity=90);*/    /* ie  */
+  /*opacity: 0.9; */ 
   }
-.item .caption a {
+
+.caption > a {
   text-decoration:none;
   color: #e03406;
   font-size:16px;
-
   /* add spacing and make the whole row clickable*/
-  padding:5px;
+  padding:1em 0;
   display:block;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
@@ -189,20 +174,40 @@ div.item {
   }
 
 .caption a:hover {
-  color: #FFF;
+  color: #CBD6DD;
 }
-.item .caption p {
+
+.item:nth-child(2n) .caption a:hover {
+  color: #fff;
+}
+
+.caption p {
   padding:5px;
   margin:0;
   font-size:.7em;
   font-weight: normal;
   font-family: Arial, sans-serif;
   }
+
+.technologies li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.technologies img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*BUG BUG BUG -- don't need to use js for img positioning anymore*/
 img {
-  border:0;
   /* allow javascript moves the img position*/
   position:absolute;
   }
+
 .clear {
   clear:both;
   }
@@ -210,50 +215,46 @@ img {
 /*END*/
 
 h3,h4,h5 {
-	line-height: 1.6em;
-	font-size: 1em;
-	}
+  line-height: 1.6em;
+  font-size: 1em;
+  }
 
 a, button {
   color: #3384b3;
-	text-decoration: none;
-	font-weight: bold;
-	}
-
-a img {
-	border: thin solid black;
-	}
+  text-decoration: none;
+  font-weight: bold;
+  }
 
 a:hover, a:active, button:hover, button:active {
-	color: #e03406;
-	}
-	
+  color: #e03406;
+  }
+  
 .email {
-	font-size: .9em;
+  font-size: .9em;
   }
 
 img {
-	padding: 0;
-	margin: auto;
-	text-align: center;
-	display: block;
-	}
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  display: block;
+  }
 
 .thumb {
-	display: inline;
-	margin: 10px;
-	border: 2px solid #fff;
-	}
+  display: inline;
+  margin: 10px;
+  }
 
 object {
-	text-align: center;
-	display: block;
-	margin: 30px auto;
-	}
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  }
 
 .clear {
-	clear: both;
+  clear: both;
   }
+
 
 /* Filter classes:
 copyedit
@@ -274,8 +275,9 @@ Footer
 =============
 */
 footer {
-	text-align: center;
-	margin: auto;
+	margin: 2em auto;
+  padding: 2em 0;
+  background-color: #CBD6DD;
 	}
 
 ul#social {
@@ -283,36 +285,14 @@ ul#social {
 	}
 	
 ul#social li{
-	float: left;
-	list-style-type: none;
-	padding-left:20px;
-	text-align: center;
-	display: inline;
+  width: 32px;
+  height: auto;
+	display: inline-block;
 	}
-		
-ul#social li a{
-	display: block;
-	width:25px;
-	height:25px;
-	text-indent: -9999px;
-	float: left;
-	overflow:hidden;
-	}
-
-ul#social li#twitter a{
-	background: url('images/nav_records.jpg') center bottom;
-	}
-
-ul#social li#github a {
-	background: url('images/nav_shoppe.jpg') center bottom;
-	}
-
-ul#social li#linkedin a {
-	background: url('images/nav_media.jpg') center bottom;
-	}	
 	
 #copyright {
 	font-size: .8em;
 	text-align: center;
   padding-top: 3em;
+  color: #FFF;
 	}
