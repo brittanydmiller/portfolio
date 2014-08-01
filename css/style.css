@@ -27,12 +27,27 @@ body {
 
 header {
   background: #FFF url('halftone.png') repeat;
-	padding: 2em 0;
-  }	
-	   
-#index-nav {
-  margin: auto;
-  padding-left: 5em;
+  padding: 2em 0;
+  } 
+     
+#links ul {
+  margin-right: 10em;
+}
+
+#links a {
+  color: #000;
+  font-weight: normal;
+  }
+
+#links a:hover {
+  color: #333;
+  font-weight: normal;
+  }
+
+#links li {
+  display: inline;
+  float: right;
+  margin-right: 4em;
   }
   
 h1 {
@@ -49,35 +64,16 @@ h2 {
   }
   
 p#tagline{
-	margin: auto 7%;
-	padding-bottom: 2em;
+  margin: auto 7%;
+  padding-bottom: 2em;
   font-style: italic;
   font-weight: normal;
   font-family: Georgia, serif;
   line-height: 2em;
   font-size: 1.2em;
-	}
-
-#links a {
-  color: #000;
-  font-weight: normal;
-  padding: 2em;
   }
+  
 
-#links a:hover {
-  color: #333;
-  font-weight: normal;
-  }
-
-#links li {
-  display: inline;
-  float: right;
-  margin-right: 4em;
-  }
-
-#links ul {
-  margin-right: 10em;
-}
 
 header img {
   height: 200px;
@@ -136,10 +132,14 @@ ul #filter button:hover {
 
 .item {
   width:70%;
-  height:200px;
+  min-height:220px;
   margin:4em auto;
-  /*overflow:hidden;*/
+  vertical-align: middle;
   position:relative;
+  }
+
+.item:nth-child(2n) {
+  background-color: #DDD;
   }
 
 .portfolio-thumb {
@@ -152,6 +152,7 @@ ul #filter button:hover {
   width:50%;
   min-height:200px;
   margin-left:200px;
+  padding-left: 2em;
   color:#000;
   font-weight:bold;
   position:absolute;
@@ -159,6 +160,7 @@ ul #filter button:hover {
   /*filter:alpha(opacity=90);*/    /* ie  */
   /*opacity: 0.9; */ 
   }
+
 .item .caption a {
   text-decoration:none;
   color: #e03406;
@@ -185,7 +187,13 @@ ul #filter button:hover {
 .technologies li {
   display: inline-block;
   width: 50px;
-  margin: 5px;
+  height: 50px;
+}
+
+.technologies img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*BUG BUG BUG -- don't need to use js for img positioning anymore*/
