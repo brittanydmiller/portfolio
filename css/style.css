@@ -100,7 +100,7 @@ ul {
   width: 100%;
   height: 100%;
   padding: 1em 0;
-  margin: 0;
+  margin-bottom: 1em;
   background-color: #CBD6DD;
   }
 
@@ -117,9 +117,9 @@ ul#filter button {
   }
 
 
-ul #filter button:hover {
+/*ul #filter button:hover {
   background-color: #3384b3;
-  }
+  }*/
 
 #portfolio {
   background-color: white;
@@ -148,7 +148,7 @@ ul #filter button:hover {
   margin-top: 5px;
   }
 
-.item .caption {
+.caption {
   width:50%;
   min-height:200px;
   margin-left:200px;
@@ -161,12 +161,12 @@ ul #filter button:hover {
   /*opacity: 0.9; */ 
   }
 
-.item .caption a {
+.caption > a {
   text-decoration:none;
   color: #e03406;
   font-size:16px;
   /* add spacing and make the whole row clickable*/
-  padding:1em;
+  padding:1em 0;
   display:block;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
@@ -176,7 +176,12 @@ ul #filter button:hover {
 .caption a:hover {
   color: #CBD6DD;
 }
-.item .caption p {
+
+.item:nth-child(2n) .caption a:hover {
+  color: #fff;
+}
+
+.caption p {
   padding:5px;
   margin:0;
   font-size:.7em;
@@ -188,6 +193,7 @@ ul #filter button:hover {
   display: inline-block;
   width: 50px;
   height: 50px;
+  margin-top: 5px;
 }
 
 .technologies img {
