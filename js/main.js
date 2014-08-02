@@ -1,5 +1,8 @@
 var app = {
   filterMaster: function() {
+    $('#filter-div h3').click(function() {
+      $('#filter').css('display', 'block');
+    });
     $('ul#filter button').click(function() {
       $(this).css('outline','none');
       $('ul#filter .current').removeClass('current');

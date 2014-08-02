@@ -277,20 +277,6 @@ object {
   clear: both;
   }
 
-
-/* Filter classes:
-copyedit
-design
-graphics
-html
-css
-js
-wordpress
-logo
-ruby
-*/
-
-
 /*
 =============
 Footer
@@ -308,3 +294,73 @@ footer {
   text-align: center;
   color: #FFF;
   }
+
+
+
+@media only screen and (min-width : 550px) and (max-width : 1024px) {
+  .item {
+    padding-left: 0px;
+    padding-right: 0px;
+   }
+
+  .item img, .caption {
+   margin: 0 auto;
+  }
+
+  #about-me p {
+    width:60%;
+    }
+
+  #filter {
+    display: none;
+    }
+
+  #filter-div button{
+    float: none;
+    width: 100%;
+    margin: 2px auto;
+  }
+}
+
+@media only screen and (max-width : 549px) {
+
+  #portrait {
+    display: none;
+    }
+
+  #filter {
+    display: none;
+    }
+
+  #filter-div button{
+    float: none;
+    width: 100%;
+    margin: 2px auto;
+    padding: 1em 2em;
+    background-color: #444;
+    border-bottom: 1px solid #fff;
+    border-radius: 10px;
+  }
+
+  .item {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+    }
+
+  .portfolio-thumb {
+    display: inline-block;
+    }
+
+  .caption {    
+    display: inline-block;
+    margin-left: 0;
+    padding-left: 0;
+    width: 200px;
+    }
+
+  .offset {
+    margin: 0 auto;
+    padding: 0;
+    }
+}
