@@ -94,7 +94,7 @@ ul#social img{
   background: #FFF url('halftone.png') repeat;
 }
   
-#about-me img {
+#portrait {
   height: 200px;
   width: 200px;
   border-radius: 100px;
@@ -339,7 +339,8 @@ footer {
     }
 
   #portrait {
-    display: none;
+    float:initial;
+    margin: 0 auto;
     }
 
   #filter-div button{
