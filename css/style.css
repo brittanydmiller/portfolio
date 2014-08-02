@@ -75,12 +75,6 @@ p#tagline{
   
 
 
-header img {
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  display: none;
-  }
 /*
 ===============
 Body Styling
@@ -131,15 +125,16 @@ ul#filter button {
   }
 
 .item {
-  width:70%;
+  /*width:70%;*/
   min-height:220px;
-  margin:4em auto;
+  /*margin:4em auto;*/
+  /*padding: 2em 1em;*/
   vertical-align: middle;
   position:relative;
   }
 
 .item:nth-child(2n) {
-  background-color: #DDD;
+  background-color: #EEE;
   }
 
 .portfolio-thumb {
@@ -155,7 +150,6 @@ ul#filter button {
   padding-left: 2em;
   color:#000;
   font-weight:bold;
-  position:absolute;
   left:0;
   /*filter:alpha(opacity=90);*/    /* ie  */
   /*opacity: 0.9; */ 
@@ -202,10 +196,8 @@ ul#filter button {
   transform: translateY(-50%);
 }
 
-/*BUG BUG BUG -- don't need to use js for img positioning anymore*/
 img {
-  /* allow javascript moves the img position*/
-  position:absolute;
+  float: left;
   }
 
 .clear {
@@ -275,24 +267,39 @@ Footer
 =============
 */
 footer {
-	margin: 2em auto;
+  margin: 2em auto;
   padding: 2em 0;
   background-color: #CBD6DD;
-	}
+  }
 
 ul#social {
-	list-style-type:none;
-	}
-	
+  list-style-type:none;
+  }
+  
 ul#social li{
   width: 32px;
   height: auto;
-	display: inline-block;
-	}
-	
+  display: inline-block;
+  }
+
+#about-me {
+  min-height: 200px;
+}
+  
+#about-me img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  float: right;
+  margin-left: 2em;
+  }
+
+#about-me p {
+  padding: .5em 0;
+}
 #copyright {
-	font-size: .8em;
-	text-align: center;
+  font-size: .8em;
+  text-align: center;
   padding-top: 3em;
   color: #FFF;
-	}
+  }
