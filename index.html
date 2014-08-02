@@ -15,18 +15,29 @@
 <body>
   <header>
     <div class="offset">
-      <ul id="links">
-        <li id="skills"><a href="">Skills</a></li>
-        <li id="about"><a href="#about-me">About</a></li>
-        <li id="resume"><a href="BrittanyMillerResume-Brief.pdf">Resume</a></li>
-      </ul>
       <h1><a href="index.html">Brittany D. Miller</a></h1>
       <p class="clear" id="tagline">Developer in San Francisco, CA.</p>
     </div>
   </header>
+
+  <div id="about-me">
+    <div class="offset" class="clear">
+      <img src="images/yellowbg.jpg" alt="Brittany Miller portrait" width="200px" height="200px" />
+      <h2>About</h2>
+      <p>Why am I passionate about technology? It provides a constant supply of interesting new problems to solve and stories to tell. It's the opportunity to stand with one foot in the creative and one in the technical -- a chance to work with the most inspiring people.</p>
+      <p>I have worked in many different aspects of small business, with a background in video, travel, copy editing, graphics, music, marketing and events.</p>
+      <ul id="social">
+        <li><a id="github" href="http://github.com/brittanydmiller"><img src="css/github.png" alt="Github" width="32px" height="32px" /></a></li>
+        <li><a id="linkedin" href="http://www.linkedin.com/in/brittanydmiller"><img src="css/linkedin.png" alt="LinkedIn" width="32px" height="32px" /></a></li>
+        <li id="resume"><a href="BrittanyMillerResume-Brief.pdf">Resume</a></li>
+      </ul>
+    </div>
+  </div>
+
   <section id="filter-div">
     <div class="offset">
       <h3>Filter projects by skill</h3>
+      <hr />
       <ul id="filter">
         <li><button href="#" class="current">Show All</button></li>
         <li><button href="#">Ruby on Rails</button></li>
@@ -41,18 +52,20 @@
   
   <section id="portfolio">
     <div class="container clear">
-      <div class="item  ruby-on-rails html-and-css javascript-and-jquery copy-editing" id="zombify">
+      <div class="item  ruby-on-rails html-and-css javascript-and-jquery copy-editing graphics-and-layout" id="zombify">
         <div class="offset">
         <a href="http://zomb.herokuapp.com/demo" target="_blank" title="Zombify. Team lead. App design, schema design, Ruby on Rails, JavaScript, jQuery, HTML/CSS, logo design. With Maggy Hillen, Carolyn Atterbury and Andrew Fruth.">
           <img class="portfolio-thumb"  src="images/zomb-thumb.jpg" alt="Zombify app" width="200px" height="200px" />
         </a>
         <div class="caption ">
           <a href="http://zomb.herokuapp.com/demo" target="_blank">Zombify</a>
-          <p class="descrip">Web app that manages a tag/scavenger-hunt/capture-the-flag game you play in real life using geolocation. Team lead. App design, schema design, Ruby on Rails, JavaScript, jQuery, HTML/CSS, logo design. With Maggy Hillen, Carolyn Atterbury and Andrew Fruth.</p>
+          <p class="descrip">Web app that manages a tag/scavenger-hunt/capture-the-flag game you play in real life using geolocation. Team lead. App design, schema design, Ruby on Rails, JavaScript, jQuery, HTML/CSS, logo design. With Maggy Hillen, Carolyn Atterbury and Andrew Fruth. <a href="https://github.com/brittanydmiller/zombify">View code on GitHub.</a></p>
           <ul class="technologies">
             <li><img src="css/rails.png" alt="Ruby on Rails" width="39px" height="50px"></li>
             <li><img src="css/js.png" alt="JavaScript and jQuery" width="36px" height="50px"></li>
             <li><img src="css/heroku.png" alt="Heroku" width="36px" height="50px"></li>
+            <li><img src="css/html.png" alt="Html" width="36px" height="50px"></li>
+            <li><img src="css/css.png" alt="Css" width="36px" height="50px"></li>
             <li><img src="css/postgres.png" alt="Postgresql" width="51px" height="50px"></li>
           </ul>
         </div>
@@ -66,9 +79,11 @@
         </a>
         <div class="caption ">
           <a href="http://forecash.herokuapp.com/" target="_blank">Forecash</a>
-          <p class="descrip">Web app to forecast your cashflow when investigating new purchases or hires. Team lead. App design, Ruby on Rails, JavaScript, HTML/CSS. One-day hackathon project. With Chris Yancey, Nick Meehan, Andrew Fruth, and David Stavis.</p>
+          <p class="descrip">Web app to forecast your cashflow when investigating new purchases or hires. Team lead. App design, Ruby on Rails, JavaScript, HTML/CSS. One-day hackathon project. With Chris Yancey, Nick Meehan, Andrew Fruth, and David Stavis.<a href="https://github.com/cyancey/forecash">View code on GitHub.</a></p>
           <ul class="technologies">
             <li><img src="css/rails.png" alt="Ruby on Rails" width="39px" height="50px"></li>
+            <li><img src="css/html.png" alt="Html" width="36px" height="50px"></li>
+            <li><img src="css/css.png" alt="Css" width="36px" height="50px"></li>
             <li><img src="css/js.png" alt="JavaScript and jQuery" width="36px" height="50px"></li>
             <li><img src="css/heroku.png" alt="Heroku" width="36px" height="50px"></li>
             <li><img src="css/postgres.png" alt="Postgresql" width="51px" height="50px"></li>
@@ -84,7 +99,7 @@
         </a>
         <div class="caption ">
           <a href="http://dbcconnectfour.herokuapp.com/" target="_blank">DBC Connect Four</a>
-          <p class="descrip">Drag and drop web game. Website design with HTML/CSS, MVC JavaScript. With Aaron Wertman, Phil Wittig, Rex Suter, and Drew West. (Parody of <a href="http://dbcconnect.herokuapp.com">DBCconnect.herokuapp.com</a>)</p>
+          <p class="descrip">Drag and drop web game. (Parody of <a href="http://dbcconnect.herokuapp.com">DBCconnect.herokuapp.com</a>.) Website design with HTML/CSS, MVC JavaScript. With Aaron Wertman, Phil Wittig, Rex Suter, and Drew West. <a href="https://github.com/brittanydmiller/connectfour">View code on GitHub.</a></p>
           <ul class="technologies">
             <li><img src="css/js.png" alt="JavaScript and jQuery" width="36px" height="50px"></li>
             <li><img src="css/html.png" alt="Html" width="36px" height="50px"></li>
@@ -104,6 +119,7 @@
           <p class="descrip">Website design with Wordpress and HTML/CSS, logo design, graphics, content production and copy editing. (Now maintained by another dev.)</p>
           <ul class="technologies">
             <li><img src="css/wpress.png" alt="Wordpress" width="35px" height="35px"></li>
+            <li><img src="css/html.png" alt="Html" width="36px" height="50px"></li>
             <li><img src="css/css.png" alt="Css" width="36px" height="50px"></li>
             <li><img src="css/photoshop.png" alt="PhotoShop" width="36px" height="35px"></li>
           </ul>
@@ -117,7 +133,7 @@
         <img class="portfolio-thumb" src="images/spencerWP_thumb.jpg" alt="Spencer McGillicutty Wordpress Website" width="200px" height="200px" />
         </a>
         <div class="caption ">
-          <a target="_blank" href="http://spencermcgillicutty.com">Spencer   McGillicutty</a>
+          <a target="_blank" href="http://spencermcgillicutty.com">Spencer McGillicutty</a>
           <p class="descrip">Website design with Wordpress and HTML/CSS, logo design, graphics, content production and copy editing. (Album art by Matt Shoobe. Illustrations by Katey Harvey.) </p>
           <ul class="technologies">
             <li><img src="css/wpress.png" alt="Wordpress" width="35px" height="35px"></li>
@@ -140,6 +156,8 @@
           <p class="descrip">Logo design, website content production and editing, Wordpress upkeep, graphics. (Content now maintained by someone else.)</p>
           <ul class="technologies">
             <li><img src="css/wpress.png" alt="Wordpress" width="35px" height="35px"></li>
+            <li><img src="css/html.png" alt="Html" width="36px" height="50px"></li>
+            <li><img src="css/css.png" alt="Css" width="36px" height="50px"></li>
             <li><img src="css/photoshop.png" alt="PhotoShop" width="36px" height="35px"></li>
           </ul>
         </div>
@@ -322,27 +340,16 @@
           <a target="_blank" href="portfolio/ourgardenpost">Our Garden Post</a>
           <p class="descrip">Web Design I Project: HTML, CSS, graphics. Content borrowed from the web for educational purposes.</p>
           <ul class="technologies">
-            <li><img src="css/css.png" alt="css" width="36px" height="50px"></li>
+            <li><img src="css/html.png" alt="Html" width="36px" height="50px"></li>
+            <li><img src="css/css.png" alt="Css" width="36px" height="50px"></li>
             <li><img src="css/photoshop.png" alt="Photoshop" width="36px" height="35px"></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <div id="about-me">
-    <div class="offset" class="clear">
-      <img src="images/yellowbg.jpg" alt="Brittany Miller portrait" width="200px" height="200px" />
-      <h2>About Brittany</h2>
-      <p>Why am I passionate about technology? It provides a constant supply of interesting new problems to solve and stories to tell. It's the opportunity to stand with one foot in the creative and one in the technical -- a chance to work with the most inspiring people.</p>
-      <p>I have worked in many different aspects of small business, with a background in video, travel, copy editing, graphics, music, marketing and events.</p>
-    </div>
-  </div>
   <footer>
     <div class="offset">
-      <ul id="social">
-  			<li><a id="github" href="http://github.com/brittanydmiller"><img src="css/github.png" alt="Github" width="32px" height="32px" /></a></li>
-  			<li><a id="linkedin" href="http://www.linkedin.com/in/brittanydmiller"><img src="css/linkedin.png" alt="LinkedIn" width="32px" height="32px" /></a></li>
-  		</ul>
   		<p id="copyright">&copy; Copyright 2014 Brittany D. Miller</p>
     </div>
 	</footer>

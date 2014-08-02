@@ -23,7 +23,7 @@ body {
   width: 80%;
   margin: 0 auto;
   padding-right: 3em;
-}
+  }
 
 header {
   background: #FFF url('halftone.png') repeat;
@@ -32,7 +32,7 @@ header {
      
 #links ul {
   margin-right: 10em;
-}
+  }
 
 #links a {
   color: #000;
@@ -72,7 +72,39 @@ p#tagline{
   font-size: 1.2em;
   }
   
+ul#social {
+  list-style-type:none;
+  }
+  
+ul#social li {
+  width: 32px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  }
 
+ul#social img{
+  width: 32px;
+  height: 32px;
+  }
+
+#about-me {
+  min-height: 200px;
+  padding: 2em 0 4em 0;
+  background: #FFF url('halftone.png') repeat;
+}
+  
+#about-me img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  float: right;
+  margin-left: 2em;
+  }
+
+#about-me p {
+  padding: .5em 0;
+}
 
 /*
 ===============
@@ -92,27 +124,34 @@ ul {
   float: left;
   width: 100%;
   height: 100%;
-  padding: 1em 0;
-  margin-bottom: 1em;
-  background-color: #CBD6DD;
+  padding: 2em 0;
+  background-color: rgb(1,120,181);
+  color: #FFF;
   }
 
-ul#filter button {
+#filter-div h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-family: Georgia, serif;
+  margin: auto 7%;
+  }
+
+#filter button {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   background-color: transparent;
   padding: .7em .2em;
   font-size: .8em;
-  width: 13%;
+  width: 14%;
   border: none;
   float: left;
+  color: #FFF;
   }
 
-
-/*ul #filter button:hover {
-  background-color: #3384b3;
-  }*/
+#filter button:hover, #filter button:active {
+  color: #CBD6DD;;
+  }
 
 #portfolio {
   background-color: white;
@@ -125,11 +164,11 @@ ul#filter button {
 
 .item {
   vertical-align: middle;
-  padding: 3em;
+  padding: 4em 6em;
   }
 
 .item:nth-child(2n) {
-  background-color: #EEE;
+  background-color: #CBD6DD;
   }
 
 .portfolio-thumb {
@@ -138,7 +177,6 @@ ul#filter button {
   }
 
 .caption {
-  width:50%;
   min-height:200px;
   margin-left:200px;
   padding-left: 2em;
@@ -198,15 +236,13 @@ img {
   clear:both;
   }
 
-/*END*/
-
 h3,h4,h5 {
   line-height: 1.6em;
   font-size: 1em;
   }
 
 a, button {
-  color: #3384b3;
+  color: rgb(1,120,181);
   text-decoration: none;
   font-weight: bold;
   }
@@ -261,39 +297,14 @@ Footer
 =============
 */
 footer {
-  margin: 2em auto;
+  margin: 0 auto;
   padding: 2em 0;
-  background-color: #CBD6DD;
+  background-color: rgb(1,120,181);
+  color: #FFF;
   }
 
-ul#social {
-  list-style-type:none;
-  }
-  
-ul#social li{
-  width: 32px;
-  height: auto;
-  display: inline-block;
-  }
-
-#about-me {
-  min-height: 200px;
-}
-  
-#about-me img {
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  float: right;
-  margin-left: 2em;
-  }
-
-#about-me p {
-  padding: .5em 0;
-}
 #copyright {
   font-size: .8em;
   text-align: center;
-  padding-top: 3em;
   color: #FFF;
   }
