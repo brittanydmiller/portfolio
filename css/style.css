@@ -23,7 +23,7 @@ body {
   width: 80%;
   margin: 0 auto;
   padding-right: 3em;
-}
+  }
 
 header {
   background: #FFF url('halftone.png') repeat;
@@ -32,7 +32,7 @@ header {
      
 #links ul {
   margin-right: 10em;
-}
+  }
 
 #links a {
   color: #000;
@@ -65,7 +65,6 @@ h2 {
   
 p#tagline{
   margin: auto 7%;
-  padding-bottom: 2em;
   font-style: italic;
   font-weight: normal;
   font-family: Georgia, serif;
@@ -73,14 +72,40 @@ p#tagline{
   font-size: 1.2em;
   }
   
+ul#social {
+  list-style-type:none;
+  }
+  
+ul#social li {
+  width: 32px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  }
 
+ul#social img{
+  width: 32px;
+  height: 32px;
+  }
 
-header img {
+#about-me {
+  min-height: 200px;
+  padding: 2em 0 4em 0;
+  background: #FFF url('halftone.png') repeat;
+}
+  
+#about-me img {
   height: 200px;
   width: 200px;
   border-radius: 100px;
-  display: none;
+  float: right;
+  margin-left: 2em;
   }
+
+#about-me p {
+  padding: .5em 0;
+}
+
 /*
 ===============
 Body Styling
@@ -99,27 +124,34 @@ ul {
   float: left;
   width: 100%;
   height: 100%;
-  padding: 1em 0;
-  margin-bottom: 1em;
-  background-color: #CBD6DD;
+  padding: 2em 0;
+  background-color: rgb(1,120,181);
+  color: #FFF;
   }
 
-ul#filter button {
+#filter-div h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-family: Georgia, serif;
+  margin: auto 7%;
+  }
+
+#filter button {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   background-color: transparent;
   padding: .7em .2em;
   font-size: .8em;
-  width: 13%;
+  width: 14%;
   border: none;
   float: left;
+  color: #FFF;
   }
 
-
-/*ul #filter button:hover {
-  background-color: #3384b3;
-  }*/
+#filter button:hover, #filter button:active {
+  color: #CBD6DD;;
+  }
 
 #portfolio {
   background-color: white;
@@ -131,31 +163,25 @@ ul#filter button {
   }
 
 .item {
-  width:70%;
-  min-height:220px;
-  margin:4em auto;
   vertical-align: middle;
-  position:relative;
+  padding: 4em 6em;
   }
 
 .item:nth-child(2n) {
-  background-color: #DDD;
+  background-color: #CBD6DD;
   }
 
 .portfolio-thumb {
   /*filter:alpha(opacity=90); */   /* ie  */
   /*opacity: 0.7;*/
-  margin-top: 5px;
   }
 
 .caption {
-  width:50%;
   min-height:200px;
   margin-left:200px;
   padding-left: 2em;
   color:#000;
   font-weight:bold;
-  position:absolute;
   left:0;
   /*filter:alpha(opacity=90);*/    /* ie  */
   /*opacity: 0.9; */ 
@@ -166,7 +192,7 @@ ul#filter button {
   color: #e03406;
   font-size:16px;
   /* add spacing and make the whole row clickable*/
-  padding:1em 0;
+  padding:1em 0 0 0 ;
   display:block;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
@@ -182,9 +208,9 @@ ul#filter button {
 }
 
 .caption p {
-  padding:5px;
+  padding:5px 0;
   margin:0;
-  font-size:.7em;
+  font-size:.8em;
   font-weight: normal;
   font-family: Arial, sans-serif;
   }
@@ -202,17 +228,13 @@ ul#filter button {
   transform: translateY(-50%);
 }
 
-/*BUG BUG BUG -- don't need to use js for img positioning anymore*/
 img {
-  /* allow javascript moves the img position*/
-  position:absolute;
+  float: left;
   }
 
 .clear {
   clear:both;
   }
-
-/*END*/
 
 h3,h4,h5 {
   line-height: 1.6em;
@@ -220,7 +242,7 @@ h3,h4,h5 {
   }
 
 a, button {
-  color: #3384b3;
+  color: rgb(1,120,181);
   text-decoration: none;
   font-weight: bold;
   }
@@ -275,24 +297,14 @@ Footer
 =============
 */
 footer {
-	margin: 2em auto;
+  margin: 0 auto;
   padding: 2em 0;
-  background-color: #CBD6DD;
-	}
-
-ul#social {
-	list-style-type:none;
-	}
-	
-ul#social li{
-  width: 32px;
-  height: auto;
-	display: inline-block;
-	}
-	
-#copyright {
-	font-size: .8em;
-	text-align: center;
-  padding-top: 3em;
+  background-color: rgb(1,120,181);
   color: #FFF;
-	}
+  }
+
+#copyright {
+  font-size: .8em;
+  text-align: center;
+  color: #FFF;
+  }
