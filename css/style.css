@@ -94,7 +94,7 @@ ul#social img{
   background: #FFF url('halftone.png') repeat;
 }
   
-#about-me img {
+#portrait {
   height: 200px;
   width: 200px;
   border-radius: 100px;
@@ -143,7 +143,7 @@ ul {
   background-color: transparent;
   padding: .7em .2em;
   font-size: .8em;
-  width: 14%;
+  width: 16.66%;
   border: none;
   float: left;
   color: #FFF;
@@ -242,7 +242,7 @@ h3,h4,h5 {
   }
 
 a, button {
-  color: rgb(1,120,181);
+  color: #0178B5;
   text-decoration: none;
   font-weight: bold;
   }
@@ -295,56 +295,62 @@ footer {
   color: #FFF;
   }
 
+@media only screen and (max-width : 961px) {
+  
+  #filter-div h3 {
+    padding: 1em;
+    background-color: #035985;
+    border-bottom: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
 
+  hr {
+    display:none;
+  }
 
-@media only screen and (min-width : 550px) and (max-width : 1024px) {
+  #filter {
+    display: none;
+    }
+
+  #filter-div button{
+    float: none;
+    width: 100%;
+    margin: 2px auto;
+  }
+
   .item {
     padding-left: 0px;
     padding-right: 0px;
    }
+}
 
-  .item img, .caption {
-   margin: 0 auto;
-  }
+@media only screen and (min-width : 550px) and (max-width : 961px) {
 
   #about-me p {
     width:60%;
     }
-
-  #filter {
-    display: none;
-    }
-
-  #filter-div button{
-    float: none;
-    width: 100%;
-    margin: 2px auto;
-  }
 }
 
 @media only screen and (max-width : 549px) {
 
-  #portrait {
-    display: none;
+  #tagline {
+      font-size: .8em;
     }
 
-  #filter {
-    display: none;
+  #portrait {
+    float:initial;
+    margin: 0 auto;
     }
 
   #filter-div button{
-    float: none;
-    width: 100%;
-    margin: 2px auto;
     padding: 1em 2em;
-    background-color: #444;
+    background-color: #035985;
     border-bottom: 1px solid #fff;
     border-radius: 10px;
   }
 
   .item {
-    padding-left: 0px;
-    padding-right: 0px;
     margin: 0 auto;
     }
 
@@ -356,7 +362,6 @@ footer {
     display: inline-block;
     margin-left: 0;
     padding-left: 0;
-    width: 200px;
     }
 
   .offset {
