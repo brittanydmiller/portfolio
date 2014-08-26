@@ -1,7 +1,7 @@
 var app = {
   filterMaster: function() {
     $('#filter-div h3').click(function() {
-      $('#filter').css('display', 'block');
+      $('#filter').toggle();
     });
     $('ul#filter button').click(function() {
       $(this).css('outline','none');
