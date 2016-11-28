@@ -31,9 +31,14 @@ var app = {
     $("#spencerSelf a").slimbox();
     $("#spencerGames a").slimbox();
   },
+  setCopyright: function() {
+    var currentYear = new Date().getFullYear();
+    $("#copyright #year").text(currentYear);
+  },
   init: function() {
     app.filterMaster();
     app.slimboxMaster();
+    app.setCopyright();
   }
 };
 
