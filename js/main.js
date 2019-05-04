@@ -31,6 +31,8 @@ var app = {
     $("#spencerSelf a").slimbox();
     $("#spencerGames a").slimbox();
     $("#bizcards a").slimbox();
+    $("#leela a").slimbox();
+    $("#miscCostumes a").slimbox();
   },
   setCopyright: function() {
     var currentYear = new Date().getFullYear();
