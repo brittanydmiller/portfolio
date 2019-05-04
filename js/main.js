@@ -7,7 +7,7 @@ var app = {
       $(this).css('outline','none');
       $('ul#filter .current').removeClass('current');
       $(this).parent().addClass('current');
-      var filterVal = $(this).text().toLowerCase().replace(/ /g,'-');
+      var filterVal = $(this).text().toLowerCase().replace(/ /g,'-').replace(/&/g,'and');
       if(filterVal == 'show-all') {
         $('div.item.hidden').fadeIn('slow').removeClass('hidden');
       } else {
@@ -30,6 +30,7 @@ var app = {
     $("#zshare a").slimbox();
     $("#spencerSelf a").slimbox();
     $("#spencerGames a").slimbox();
+    $("#bizcards a").slimbox();
   },
   setCopyright: function() {
     var currentYear = new Date().getFullYear();
