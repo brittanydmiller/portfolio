@@ -33,6 +33,8 @@ var app = {
     $("#bizcards a").slimbox();
     $("#leela a").slimbox();
     $("#miscCostumes a").slimbox();
+    $("#visualArt a").slimbox();
+    $("#props a").slimbox();
   },
   setCopyright: function() {
     var currentYear = new Date().getFullYear();
