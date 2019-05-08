@@ -5,8 +5,8 @@ var app = {
     });
     $('ul#filter button').click(function() {
       $(this).css('outline','none');
-      $('ul#filter .current').removeClass('current');
-      $(this).parent().addClass('current');
+      $('ul#filter li .current').removeClass('current');
+      $(this).addClass('current');
       var filterVal = $(this).text().toLowerCase().replace(/ /g,'-').replace(/&/g,'and');
       if(filterVal == 'show-all') {
         $('div.item.hidden').fadeIn('slow').removeClass('hidden');

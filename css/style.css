@@ -49,6 +49,11 @@ header {
   float: right;
   margin-right: 4em;
   }
+
+#filter .current{
+  font-size: 1.3em;
+    background-color: #7cd2c7;
+  }
   
 h1 {
   font-size: 250%;
@@ -149,8 +154,8 @@ ul {
   color: #FFF;
   }
 
-#filter button:hover, #filter button:active {
-  color: #CBD6DD;;
+#filter button:hover {
+  color: #d8e3ea;;
   }
 
 #portfolio {
@@ -168,7 +173,7 @@ ul {
   }
 
 .item:nth-child(2n) {
-  background-color: #CBD6DD;
+  background-color: #d8e3ea;
   }
 
 .portfolio-thumb {
@@ -200,7 +205,7 @@ ul {
   }
 
 .caption a:hover {
-  color: #CBD6DD;
+  color: #d8e3ea;
 }
 
 .item:nth-child(2n) .caption a:hover {
@@ -247,7 +252,7 @@ a, button {
   font-weight: bold;
   }
 
-a:hover, a:active, button:hover, button:active {
+a:hover, a:active, button:hover {
   color: #e03406;
   }
   
