@@ -35,6 +35,8 @@ var app = {
     $("#miscCostumes a").slimbox();
     $("#visualArt a").slimbox();
     $("#props a").slimbox();
+    $("#sets a").slimbox();
+    $("#zbrochure a").slimbox();
   },
   setCopyright: function() {
     var currentYear = new Date().getFullYear();
