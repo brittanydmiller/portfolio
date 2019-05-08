@@ -24,13 +24,12 @@ var app = {
   },
   slimboxMaster: function() {
   // $slimbox([["image 1 url goes here", "image description"],["image 2 url goes here", "image description"],["image 3 url goes here", "image description"]], 0, optional );
-    $("#z-festShirt a").slimbox();
+    $("#swag a").slimbox();
     $("#datasafe a").slimbox();
     $("#typography a").slimbox();
     $("#zshare a").slimbox();
     $("#spencerSelf a").slimbox();
     $("#spencerGames a").slimbox();
-    $("#bizcards a").slimbox();
     $("#leela a").slimbox();
     $("#miscCostumes a").slimbox();
     $("#visualArt a").slimbox();
