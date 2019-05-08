@@ -9,16 +9,17 @@ var app = {
       $(this).addClass('current');
       var filterVal = $(this).text().toLowerCase().replace(/ /g,'-').replace(/&/g,'and');
       if(filterVal == 'show-all') {
-        $('div.item.hidden').fadeIn('slow').removeClass('hidden');
+        $('div.item.hidden').fadeIn('slow').removeClass('hidden').addClass('displayed');
       } else {
         $('div.item').each(function() {
           if(!$(this).hasClass(filterVal)) {
-            $(this).fadeOut('normal').addClass('hidden');
+            $(this).fadeOut('normal').addClass('hidden').removeClass('displayed');
           } else {
-            $(this).fadeIn('slow').removeClass('hidden');
+            $(this).fadeIn('slow').removeClass('hidden').addClass('displayed');
             }
         });
       }
+      app.stripe();
       return false;
     });
   },
@@ -41,7 +42,14 @@ var app = {
     var currentYear = new Date().getFullYear();
     $("#copyright #year").text(currentYear);
   },
+  stripe: function(){
+    $(".item.displayed").removeClass("dark");
+    $(".item.displayed").filter(function(index, element){
+        return index % 2 == 0;
+      }).addClass("dark");
+  },
   init: function() {
+    app.stripe();
     app.filterMaster();
     app.slimboxMaster();
     app.setCopyright();

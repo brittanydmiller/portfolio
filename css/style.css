@@ -172,7 +172,7 @@ ul {
   padding: 4em 6em;
   }
 
-.item:nth-child(2n) {
+.item.dark {
   background-color: #d8e3ea;
   }
 
@@ -208,7 +208,7 @@ ul {
   color: #d8e3ea;
 }
 
-.item:nth-child(2n) .caption a:hover {
+.item.dark .caption a:hover {
   color: #fff;
 }
 
