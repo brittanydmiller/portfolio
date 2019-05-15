@@ -1,0 +1,17 @@
+body {
+  background-image: url("http://brittanydmiller.com/portfolio/gollum/gollum-hobbit1280x800.jpg");
+}
+
+button {
+  color:#FFF;
+  font: 16px Lato, Calibri, sans-serif;
+  background: #226FBE;
+  border-radius: 60px;
+  border: 4px solid rgb(34,111,190);
+  margin: 15px 30px;
+  padding: 25px 80px;
+}
+
+button:hover, button:active, button:visited {
+  border: none;
+}
