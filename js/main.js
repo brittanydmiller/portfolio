@@ -225,11 +225,28 @@ var app = {
         return index % 2 == 0;
       }).addClass("dark");
   },
+  videoMaster: function(){
+
+    // var player = videojs('video');
+
+    // player.playlist([
+    //   { sources: [{src: "videos/leela-eye-rotated.mov", type: 'video/mp4'}], poster: ''},
+    //   { sources: [{src: "videos/leela-eye-hand.mp4", type: 'video/mp4'}], poster: ''},
+    //   { sources: [{src: "videos/leela-gauntlet-lights.mp4", type: 'video/mp4'}], poster: ''},
+    //   { sources: [{src: "videos/leela-gauntlet-storage2.mp4"  type: 'video/mp4'}], poster: ''}
+    // ]);
+
+    // // Play through the playlist automatically.
+    // player.playlist.autoadvance(0);
+  },
+
+
   init: function() {
     app.stripe();
     app.filterMaster();
     app.slimboxMaster();
     app.setCopyright();
+    // app.videoMaster();
   }
 };
 
