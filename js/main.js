@@ -68,7 +68,9 @@ var app = {
           ["images/zrentals-front.jpg", "Rentals card" + frontDescription],
           ["images/zrentals-back.jpg", "Rentals card" + backDescription],
           ["images/CeoBizCardDark.jpg", "Business Cards for Z Systems, inc. Graphic design"],
-          ["images/WeRentCard.jpg", "Business cards for  Z Systems, inc. (Rental sticker on back). Graphic Design."]
+          ["images/WeRentCard.jpg", "Business cards for  Z Systems, inc. (Rental sticker on back). Graphic Design."],
+          ["images/spencer_bizcard.jpg", "Business cards for Spencer McGillicutty. Layout."],
+          ["images/spencer_bizcard_back.jpg", "Business cards for Spencer McGillicutty. Layout."]
         ], 0, options);
       });
     $("#spencerSelf a").click(
@@ -194,6 +196,9 @@ var app = {
           ["images/talk-to-me-set.jpg", "Talk to Me Like the Rain and Let Me Listen (Paint Crew)"],
           ["images/music_vid2.jpg", musicVidDescrip],
           ["images/spencer-vid2.jpg", musicVidDescrip],
+          ["images/menu2.jpg","Prop Master for Music Video Shoot, Restaurant Scene. Created menu."],
+          ["images/check","Prop Master for Music Video Shoot, Restaurant Scene. Created check."],
+          ["images/check_front1.jpg","Prop Master for Music Video Shoot, Restaurant Scene. Created check & end title."],
           ["images/music_vid.jpg", "Prop Master for Music Video Shoot, Band Scene"]
           // <!-- ["images/spencer-vid1.jpg", "Music Video Shoot, Restaurant Scene"], -->
           // <!-- INSERT MUSEUM CASTING HERE -->
